@@ -131,6 +131,7 @@ span.navbar-text {
 .social-icon a {
   width: 42px;
   height: 42px;
+  text-decoration: none;
   background: rgba(217, 217, 217, 0.1);
   display: inline-flex;
   border-radius: 50%;
@@ -139,6 +140,10 @@ span.navbar-text {
   justify-content: center;
   line-height: 1;
   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.social-icon a i {
+  color: #fff;
+  font-size: 24px;
 }
 .social-icon a::before {
   content: "";
@@ -158,7 +163,7 @@ span.navbar-text {
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
-.social-icon a:hover img {
+.social-icon a:hover i {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
     hue-rotate(346deg) brightness(95%) contrast(86%);
 }
@@ -306,10 +311,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill-bx {
   background: #151515;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+}
+.newColom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .skill h2 {
   font-size: 45px;
@@ -321,6 +333,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px 0 75px 0;
+  text-align: justify;
 }
 .skill-slider {
   width: 80%;
@@ -604,4 +617,151 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+.skill-bx .newColom .profile_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.skill-bx .newColom .profile_me .image {
+  width: 200px;
+  height: 200px;
+}
+.skill-bx .newColom .profile_me .image::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #62d8ff;
+  transform: translateX(-26px) translateY(16px);
+}
+.skill-bx .newColom .profile_me .image::before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #fafafa;
+  transform: translateX(6px) translateY(-12px);
+}
+
+.skill-bx .newColom .profile_me .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 32px solid #fafafa;
+}
+
+.newColom .discript {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  height: 100%;
+}
+
+.profile h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.newColom .discript .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newColom .profile_me p i {
+  padding: 5px;
+}
+
+.newColom .profile_me p i:nth-child(1) {
+  color: #62b8ff;
+}
+.newColom .profile_me p i:nth-child(2) {
+  color: #62ffa9;
+}
+.newColom .profile_me p i:nth-child(3) {
+  color: #ff7f62;
+}
+.newColom .profile_me p i:nth-child(4) {
+  color: #cb62ff;
+}
+
+.newColom .discript .icons .icon_logo {
+  padding: 8px;
+
+  border-radius: 50px;
+  margin: 5px;
+}
+
+.newColom .discript .icons .icon_logo i {
+  padding: 8px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.newColom .discript p {
+  padding-top: 16px;
+  text-align: justify;
+}
+.newColom .discript .icons .icon_logo:nth-child(1) {
+  background: rgba(125, 45, 174, 0.2);
+}
+.newColom .discript .icons .icon_logo:nth-child(2) {
+  background: rgba(45, 86, 174, 0.2);
+}
+.newColom .discript .icons .icon_logo:nth-child(3) {
+  background: rgba(174, 157, 45, 0.2);
+}
+
+.newColom .discript .icons .icon_logo:nth-child(1) i {
+  background: #7d2daf;
+}
+.newColom .discript .icons .icon_logo:nth-child(2) i {
+  background: #2d56af;
+}
+.newColom .discript .icons .icon_logo:nth-child(3) i {
+  background: #af9e2d;
+}
+
+@media (max-width: 576px) {
+  .newColom {
+    display: flex;
+    flex-direction: column;
+  }
+  .newColom .discript {
+    width: 90%;
+  }
+  .newColom .discript .icons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .newColom {
+    display: flex;
+    flex-direction: column;
+  }
+  .newColom .discript {
+    width: 90%;
+  }
+  .newColom .discript .icons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 992px) {
+  .newColom {
+    display: flex;
+    flex-direction: column;
+  }
+  .newColom .discript {
+    width: 90%;
+  }
+  .newColom .discript .icons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
