@@ -14,24 +14,21 @@ export const Profile = () => {
                   <div className="image">
                     <img src={profileme} alt="profile_me"></img>
                   </div>
-                  <h3>
-                    Ishara Siriwardhana
-                    <sup>
-                      <i class="ri-lightbulb-flash-fill"></i>
-                    </sup>
+                  <h3 className="myname">
+                    Ishara Siriwardhana <i class="ri-lightbulb-flash-fill"></i>
                   </h3>
 
                   <p>
                     <i class="ri-edit-2-fill">
-                      <sub>1000+</sub>
+                      <span> 1000+</span>
                     </i>
 
                     <i class="ri-verified-badge-fill">
-                      <sub>9+</sub>
+                      <span> 9+</span>
                     </i>
 
                     <i class="ri-thumb-up-fill">
-                      <sub>20+</sub>
+                      <span> 20+</span>
                     </i>
                   </p>
                 </div>
