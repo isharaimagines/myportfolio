@@ -1,4 +1,6 @@
 /************ Custom Font ************/
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
 @font-face {
   font-family: Centra;
   src: url("./assets/font/CentraNo2-Bold.ttf");
@@ -625,8 +627,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: flex-start;
 }
 .skill-bx .newColom .profile_me .image {
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 260px;
 }
 .skill-bx .newColom .profile_me .image::after {
   position: absolute;
@@ -640,8 +642,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-bx .newColom .profile_me .image::before {
   position: absolute;
   content: "";
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   border: 6px solid #fafafa;
   transform: translateX(6px) translateY(-12px);
@@ -652,7 +654,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 32px solid #fafafa;
+  border: 45px solid #fafafa;
 }
 
 .newColom .discript {
@@ -675,19 +677,49 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .newColom .profile_me p i {
   padding: 5px;
+  border-radius: 18px;
+  margin: 3px;
+  color: #121212;
 }
-
+.newColom .profile_me h3 sup {
+  background: transparent;
+}
+.newColom .profile_me h3 sup i {
+  animation: color-change 3s infinite;
+  background: transparent;
+  border-radius: 50%;
+}
+@keyframes color-change {
+  0% {
+    color: #ffffff;
+  }
+  33% {
+    color: #eafb7a;
+  }
+  66% {
+    box-shadow: rgb(221, 255, 0, 0.8) 0px 0px 40px 4px;
+    color: #ddff00;
+  }
+  100% {
+    color: #eafb7a;
+  }
+}
+.newColom .profile_me p i sub {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
 .newColom .profile_me p i:nth-child(1) {
-  color: #62b8ff;
+  background: #62b8ff;
+  color: #222;
 }
 .newColom .profile_me p i:nth-child(2) {
-  color: #62ffa9;
+  background: #62ffa9;
+  color: #222;
 }
 .newColom .profile_me p i:nth-child(3) {
-  color: #ff7f62;
-}
-.newColom .profile_me p i:nth-child(4) {
-  color: #cb62ff;
+  background: #cb62ff;
+  color: #222;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .newColom .discript .icons .icon_logo {
@@ -702,6 +734,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 50%;
   margin-right: 10px;
 }
+.newColom .discript .icons .icon_logo sup {
+  font-family: "Dosis", sans-serif;
+}
 .newColom .discript p {
   padding-top: 16px;
   text-align: justify;
@@ -710,20 +745,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: rgba(125, 45, 174, 0.2);
 }
 .newColom .discript .icons .icon_logo:nth-child(2) {
-  background: rgba(45, 86, 174, 0.2);
+  background: rgb(46, 98, 255, 0.2);
 }
 .newColom .discript .icons .icon_logo:nth-child(3) {
-  background: rgba(174, 157, 45, 0.2);
+  background: rgb(251, 179, 24, 0.2);
+}
+.newColom .discript .icons .icon_logo:nth-child(4) {
+  background: rgb(255, 95, 92, 0.2);
 }
 
 .newColom .discript .icons .icon_logo:nth-child(1) i {
-  background: #7d2daf;
+  background: #2c62ff;
 }
 .newColom .discript .icons .icon_logo:nth-child(2) i {
-  background: #2d56af;
+  background: #2bc999;
 }
 .newColom .discript .icons .icon_logo:nth-child(3) i {
-  background: #af9e2d;
+  background: #fbb41a;
+}
+.newColom .discript .icons .icon_logo:nth-child(4) i {
+  background: #ff5e5b;
 }
 
 @media (max-width: 576px) {

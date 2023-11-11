@@ -12,7 +12,7 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://ishararaviget9.github.io/myprofile/">
+              <a href="https://www.linkedin.com/in/ishara-siriwardhana-5b1732274/">
                 <i class="ri-linkedin-box-fill"></i>
               </a>
               <a href="https://ishararaviget9.github.io/myprofile/">
@@ -24,8 +24,14 @@ export const Footer = () => {
               <a href="https://ishararaviget9.github.io/myprofile/">
                 <i class="ri-youtube-fill"></i>
               </a>
-              <a href="https://ishararaviget9.github.io/myprofile/">
+              <a href="https://github.com/ishararaviget9/">
                 <i class="ri-github-fill"></i>
+              </a>
+              <a href="https://discord.gg/ZCyEMb9y">
+                <i class="ri-discord-fill"></i>
+              </a>
+              <a href="https://t.me/DroidImaginalytic">
+                <i class="ri-telegram-fill"></i>
               </a>
             </div>
             <p>

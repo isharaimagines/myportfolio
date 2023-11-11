@@ -15,17 +15,24 @@ export const Profile = () => {
                     <img src={profileme} alt="profile_me"></img>
                   </div>
                   <h3>
-                    Ishara Siriwardhana <sup>☔</sup>
+                    Ishara Siriwardhana
+                    <sup>
+                      <i class="ri-lightbulb-flash-fill"></i>
+                    </sup>
                   </h3>
 
                   <p>
-                    <i class="ri-edit-2-fill">1</i>
+                    <i class="ri-edit-2-fill">
+                      <sub>1000+</sub>
+                    </i>
 
-                    <i class="ri-verified-badge-fill">2</i>
+                    <i class="ri-verified-badge-fill">
+                      <sub>9+</sub>
+                    </i>
 
-                    <i class="ri-thumb-up-fill">3</i>
-
-                    <i class="ri-thumb-down-fill">4</i>
+                    <i class="ri-thumb-up-fill">
+                      <sub>20+</sub>
+                    </i>
                   </p>
                 </div>
                 <div className="discript">
@@ -48,7 +55,14 @@ export const Profile = () => {
                       <sup>-0.2s</sup>
                       <div className="count"></div>
                     </div>
+                    <div className="icon_logo">
+                      <i class="ri-terminal-box-fill"></i>
+                      <sub>Development</sub>
+                      <sup>20+</sup>
+                      <div className="count"></div>
+                    </div>
                   </div>
+
                   <p>
                     Computer scientist skills are a combination of hard skills
                     like technical knowledge and soft skills necessary to

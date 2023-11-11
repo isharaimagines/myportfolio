@@ -42,28 +42,6 @@ export const Skills = () => {
                 examples of important soft skills that computer scientists can
                 implement in their work.
               </p>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="owl-carousel owl-theme skill-slider"
-              >
-                <div className="item">
-                  <img src={meter1} alt="" />
-                  <h5>Full Stack Developer</h5>
-                </div>
-                <div className="item">
-                  <img src={meter2} alt="" />
-                  <h5>Computer Scientist</h5>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="" />
-                  <h5>Data Scientist</h5>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="" />
-                  <h5>System Analyst</h5>
-                </div>
-              </Carousel>
             </div>
           </div>
         </div>
