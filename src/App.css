@@ -30,8 +30,7 @@ html {
 }
 
 body {
-  font-weight: 400;
-  overflow-x: hidden;
+  width: 100%;
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
@@ -80,13 +79,6 @@ select:focus {
   outline: none;
 }
 
-@media (min-width: 1700px) {
-  main .container {
-    max-width: 100%;
-    padding: 0 150px;
-  }
-}
-
 p.success {
   color: green;
 }
@@ -94,18 +86,22 @@ p.success {
 p.danger {
   color: red;
 }
+.App {
+  overflow-x: hidden;
+}
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
+  background: rgba(10, 10, 10);
 }
 nav.navbar.scrolled {
+  position: fixed;
   padding: 0px 0;
-  background-color: #121212;
 }
 nav.navbar a.navbar-brand {
   width: 9%;
@@ -219,7 +215,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   margin-top: 0;
-  padding: 200px 0 100px 0;
+  padding: 140px 0 100px 0;
   background-image: url("./assets/img/banner-bg.jpg");
   background-position: top center;
   background-size: cover;
@@ -236,12 +232,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
-  font-weight: 700;
+  font-size: 70px;
+  font-weight: 600;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  font-family: "Cabin Sketch", arial, serif;
 }
 .banner p {
   text-align: justify;
@@ -273,17 +270,61 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+.banner .container {
+  display: flex;
+}
+.banner .container .aligh-items-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner .container .aligh-items-center .animate__animated {
+  width: 50%;
+}
+.banner .container .aligh-items-center .animate__animated img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
 
+@media (max-width: 576px) {
+  .banner .container .aligh-items-center {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .banner .container .aligh-items-center .animate__animated {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .banner .container .aligh-items-center {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .banner .container .aligh-items-center .animate__animated {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .banner .container .aligh-items-center {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .banner .container .aligh-items-center .animate__animated {
+    width: 100%;
+  }
+}
 /*---------------- Projects Css -----------------*/
 .project {
   padding: 80px 0;
   position: relative;
   background-color: black;
+  z-index: 99;
 }
 .project h2 {
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 50px;
   text-align: center;
+  font-family: "Cabin Sketch", arial, serif;
 }
 .project p {
   color: #b8b8b8;
@@ -404,14 +445,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact {
   background: linear-gradient(90.21deg, #2f2daf -5.91%, #2fbd5a 111.58%);
   padding: 60px 0 200px 0;
+  z-index: 99;
 }
 .contact img {
   width: 92%;
 }
 .contact h2 {
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 50px;
   margin-bottom: 30px;
+  font-family: "Cabin Sketch", arial, serif;
 }
 .contact form input,
 .contact form textarea {
@@ -466,10 +508,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* -------------------- Footer Css ----------------- */
 .footer {
   padding: 0 0 50px 0;
-  background-image: url("./assets/img/footer-bg.png");
+  /*  background-image: url("./assets/img/footer-bg.png"); */
+  background: #0b0b0b;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 99;
 }
 .footer img {
   width: 26%;
@@ -480,6 +524,50 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-left: 14px;
+}
+.social-icon a {
+  width: 42px;
+  height: 42px;
+  text-decoration: none;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.social-icon a i {
+  color: #fff;
+  font-size: 24px;
+}
+.social-icon a::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+.social-icon a:hover::before {
+  transform: scale(1);
+}
+.social-icon a img {
+  width: 40%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+.social-icon a:hover i {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
+    hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 /* -------------------- Footer Css ----------------- */
 
@@ -500,7 +588,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 50px;
   margin-top: -80px;
 }
-
+.profile-bx h2 {
+  font-family: "Cabin Sketch", arial, serif;
+  font-size: 50px;
+}
 .profile-bx .newColom .profile_me {
   display: flex;
   flex-direction: column;
@@ -515,6 +606,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .profile-bx .newColom .profile_me .myname {
   margin: 20px;
+  font-family: "Cabin Sketch", arial, serif;
+  font-size: 35px;
 }
 .profile-bx .newColom .profile_me .image img {
   width: 100%;
@@ -533,10 +626,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
 }
 
-.profile h2 {
-  font-size: 45px;
-  font-weight: 700;
-}
 .newColom .discript .icons {
   display: flex;
   align-items: center;

@@ -1,5 +1,4 @@
 import "react-multi-carousel/lib/styles.css";
-import colorSharp from "../assets/img/color-sharp.png";
 import "../default.css";
 import $ from "jquery";
 import Raphael from "raphael";
@@ -83,49 +82,45 @@ export const Skills = () => {
   return (
     <section className="skillsPage" id="skills">
       <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
-              <div className="newColom">
-                <div id="content">
-                  <div className="legend">
-                    <h1>Legend:</h1>
-                    <div class="myskills">
-                      <ul>
-                        <li className="myList">Fullstack Developer</li>
-                        <li className="myList">Computer Science</li>
-                        <li className="myList">Generative AI</li>
-                        <li className="myList">Artificial Intelligence (AI)</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div id="diagram"></div>
+        <div className="skill-bx wow zoomIn">
+          <h2>Skills</h2>
+          <div className="skillColom">
+            <div id="content" className="content">
+              <div className="legend">
+                <h4>Legend</h4>
+                <div class="myskills">
+                  <ul>
+                    <li className="myList">Fullstack Developer</li>
+                    <li className="myList">Computer Science</li>
+                    <li className="myList">Generative AI</li>
+                    <li className="myList">Artificial Intelligence (AI)</li>
+                  </ul>
                 </div>
-
+              </div>
+              <div id="diagram" className="diagram">
                 <div className="get">
                   <div className="arc">
                     {/* <!--  Fullstack Developer --> */}
                     <input type="hidden" className="percent" value="99" />
-                    <input type="hidden" className="color" value="#BEDBE9" />
+                    <input type="hidden" className="color" value="#5238d6" />
                     <input type="hidden" className="order" value="1" />
                   </div>
                   <div class="arc">
                     {/*  <!--  Computer Science --> */}
                     <input type="hidden" class="percent" value="90" />
-                    <input type="hidden" class="color" value="#97BE0D" />
+                    <input type="hidden" class="color" value="#38d66d" />
                     <input type="hidden" class="order" value="2" />
                   </div>
                   <div class="arc">
                     {/* <!-- Generative AI --> */}
                     <input type="hidden" class="percent" value="90" />
-                    <input type="hidden" class="color" value="#D84F5F" />
+                    <input type="hidden" class="color" value="#bcd638" />
                     <input type="hidden" class="order" value="3" />
                   </div>
                   <div class="arc">
                     {/*  <!--   Artificial Intelligence (AI) --> */}
                     <input type="hidden" class="percent" value="90" />
-                    <input type="hidden" class="color" value="#88B8E6" />
+                    <input type="hidden" class="color" value="#d63a6f" />
                     <input type="hidden" class="order" value="4" />
                   </div>
                 </div>
@@ -134,7 +129,6 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   );
 };

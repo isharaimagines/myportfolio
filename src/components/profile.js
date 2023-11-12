@@ -1,5 +1,4 @@
 import "react-multi-carousel/lib/styles.css";
-import colorSharp from "../assets/img/color-sharp.png";
 import profileme from "../assets/img/1.jpg";
 export const Profile = () => {
   return (
@@ -71,7 +70,6 @@ export const Profile = () => {
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   );
 };
