@@ -92,16 +92,17 @@ p.danger {
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
-  position: sticky;
+  position: absolute;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
-  background: rgba(10, 10, 10);
+  background: transparent;
 }
 nav.navbar.scrolled {
   position: fixed;
   padding: 0px 0;
+  background: rgba(10, 10, 10);
 }
 nav.navbar a.navbar-brand {
   width: 9%;
