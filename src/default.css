@@ -23,21 +23,23 @@
   text-align: right;
 }
 
-.skills {
+/************ Skills Css ************/
+
+.myskills {
   float: left;
   clear: both;
   width: 100%;
 }
 
-.skills ul,
-.skills li {
+.myskills ul,
+.myskills li {
   display: block;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.skills li {
+.myskills li {
   float: right;
   clear: both;
   padding: 0 15px;
@@ -49,22 +51,22 @@
   transition: all 0.3s ease-in-out;
 }
 
-.skills li:nth-child(1) {
+.myskills li:nth-child(1) {
   background: #bedbe9;
 }
 
-.skills li:nth-child(2) {
+.myskills li:nth-child(2) {
   background: #97be0d;
 }
 
-.skills li:nth-child(3) {
+.myskills li:nth-child(3) {
   background: #d84f5f;
 }
 
-.skills li:nth-child(4) {
+.myskills li:nth-child(4) {
   background: #88b8e6;
 }
-.skills li.myList.hovered {
+.myskills li.myList.hovered {
   transform: scale(1.1);
 }
 
