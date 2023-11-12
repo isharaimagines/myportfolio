@@ -80,12 +80,8 @@ export const Banner = () => {
                 </span>
               </h1>
               <p>
-                A passionate tech enthusiast with a multifaceted career spanning
-                several pivotal roles in the technology landscape. With a
-                relentless curiosity and a penchant for innovation, I've
-                embarked on a journey to explore, create, and optimize in the
-                world of software and data. Here's a glimpse into my diverse
-                skill set and contributions across various domains
+                Don't judge a book by its cover. Feel free to study my projects
+                and decide yourself.
               </p>
             </div>
           </Col>

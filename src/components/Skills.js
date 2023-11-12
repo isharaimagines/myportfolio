@@ -9,15 +9,7 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>
-                Computer scientist skills are a combination of hard skills like
-                technical knowledge and soft skills necessary to collaborate in
-                teams and achieve objectives creatively. Coding, software
-                development and technical writing are just a few of the hard
-                skills for computer science. Communication and teamwork are two
-                examples of important soft skills that computer scientists can
-                implement in their work.
-              </p>
+              <p>......</p>
             </div>
           </div>
         </div>
