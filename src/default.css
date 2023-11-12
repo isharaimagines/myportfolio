@@ -44,7 +44,7 @@ svg {
 
 .content h4 {
   color: #fff;
-  text-align: right;
+  text-align: left;
 }
 
 /************ Skills Css ************/
@@ -64,7 +64,7 @@ svg {
 }
 
 .myskills li {
-  float: right;
+  float: left;
   clear: both;
   padding: 0 15px;
   height: 35px;
@@ -91,7 +91,9 @@ svg {
   background: #d63a6f;
 }
 .myskills li.myList.hovered {
-  transform: scale(1.1);
+  transform: scale(1.3);
+  background: #fafafa;
+  color: #111;
 }
 
 .diagram {
