@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Dosis&display=swap");
+
 #content {
   position: absolute;
   top: 50%;
@@ -15,8 +17,7 @@
 
 #content h1 {
   font-family: "Cabin Sketch", arial, serif;
-  text-shadow: 3px 3px 0 #ddd;
-  color: #193340;
+  color: #fff;
   font-size: 40px;
   margin-bottom: 40px;
   text-align: right;

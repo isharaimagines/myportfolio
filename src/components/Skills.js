@@ -1,7 +1,6 @@
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 import "../default.css";
-import "../assets/js/init";
 
 export const Skills = () => {
   return (
@@ -15,7 +14,7 @@ export const Skills = () => {
               <div id="content">
                 <div className="legend">
                   <h1>Legend:</h1>
-                  <div className="skills">
+                  <div class="skills">
                     <ul>
                       <li className="myList">Fullstack Developer</li>
                       <li className="myList">Computer Science</li>
@@ -29,28 +28,28 @@ export const Skills = () => {
 
               <div className="get">
                 <div className="arc">
-                  {/* Fullstack Developer */}
+                  {/* <!--  Fullstack Developer --> */}
                   <input type="hidden" className="percent" value="99" />
                   <input type="hidden" className="color" value="#BEDBE9" />
                   <input type="hidden" className="order" value="1" />
                 </div>
-                <div className="arc">
-                  {/* Computer Science */}
-                  <input type="hidden" className="percent" value="90" />
-                  <input type="hidden" className="color" value="#97BE0D" />
-                  <input type="hidden" className="order" value="2" />
+                <div class="arc">
+                  {/*  <!--  Computer Science --> */}
+                  <input type="hidden" class="percent" value="90" />
+                  <input type="hidden" class="color" value="#97BE0D" />
+                  <input type="hidden" class="order" value="2" />
                 </div>
-                <div className="arc">
-                  {/* Generative AI */}
-                  <input type="hidden" className="percent" value="90" />
-                  <input type="hidden" className="color" value="#D84F5F" />
-                  <input type="hidden" className="order" value="3" />
+                <div class="arc">
+                  {/* <!-- Generative AI --> */}
+                  <input type="hidden" class="percent" value="90" />
+                  <input type="hidden" class="color" value="#D84F5F" />
+                  <input type="hidden" class="order" value="3" />
                 </div>
-                <div className="arc">
-                  {/* Artificial Intelligence (AI) */}
-                  <input type="hidden" className="percent" value="90" />
-                  <input type="hidden" className="color" value="#88B8E6" />
-                  <input type="hidden" className="order" value="4" />
+                <div class="arc">
+                  {/*  <!--   Artificial Intelligence (AI) --> */}
+                  <input type="hidden" class="percent" value="90" />
+                  <input type="hidden" class="color" value="#88B8E6" />
+                  <input type="hidden" class="order" value="4" />
                 </div>
               </div>
             </div>
