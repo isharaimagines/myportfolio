@@ -8,7 +8,8 @@ export const Projects = () => {
   const projects = [
     {
       title: "PEACE with CONTENTMENT",
-      description: "Website Design & Developmenta",
+      description:
+        "develop a web application for Talk therapy, Mindfulness and meditation, Symptom tracking, Cognitive-behavioral therapy (CBT), Self-help resources",
       imgUrl: projImg1,
     },
   ];
@@ -26,7 +27,9 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>.........</p>
+                  <p>
+                    For all of these projects, I would appreciate your feedback.
+                  </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Tab.Content
                       id="slideInUp"
@@ -41,24 +44,6 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      {/* <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
-                      </Tab.Pane> */}
                     </Tab.Content>
                   </Tab.Container>
                 </div>

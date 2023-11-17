@@ -30,7 +30,7 @@ export const Contact = () => {
   return (
     <section className="contact" id="connect">
       <div className="container">
-        <h2 className="--text-center">Get in Touch</h2>
+        <h2 className="--text-center">Send your Comments</h2>
         <form ref={form} onSubmit={sendEmail} className="--form-control --card">
           <input
             type="text"
@@ -41,7 +41,7 @@ export const Contact = () => {
           <input type="email" placeholder="Email" name="user_email" required />
           <input type="text" placeholder="Subject" name="subject" required />
           <textarea
-            placeholder="Type any message you want to notify me..."
+            placeholder="Type any your feedbacks..."
             name="message"
             rows="4"
           ></textarea>

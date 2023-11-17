@@ -58,13 +58,11 @@ export const Profile = () => {
               </div>
 
               <p>
-                Computer scientist skills are a combination of hard skills like
-                technical knowledge and soft skills necessary to collaborate in
-                teams and achieve objectives creatively. Coding, software
-                development and technical writing are just a few of the hard
-                skills for computer science. Communication and teamwork are two
-                examples of important soft skills that computer scientists can
-                implement in their work.
+                A passionate tech enthusiast with a multifaceted career spanning
+                several pivotal roles in the technology landscape. With a
+                relentless curiosity and a penchant for innovation, I've
+                embarked on a journey to explore, create, and optimize in the
+                world of software and data.
               </p>
             </div>
           </div>
