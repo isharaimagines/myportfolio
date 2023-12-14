@@ -83,7 +83,7 @@ export const Skills = () => {
     <section className="skillsPage" id="skills">
       <div className="container">
         <div className="skill-bx wow zoomIn">
-          <h2>Skills</h2>
+          <h2>SKILLS</h2>
           <div className="skillColom">
             <div id="content" className="content">
               <div className="legend">

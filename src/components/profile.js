@@ -5,14 +5,15 @@ export const Profile = () => {
     <section className="profile" id="profile">
       <div className="container">
         <div className="profile-bx wow zoomIn">
-          <h2>About Me</h2>
+          <h2>ABOUT ME</h2>
           <div className="newColom">
             <div className="profile_me">
               <div className="image">
                 <img src={profileme} alt="profile_me"></img>
               </div>
               <h3 className="myname">
-                Ishara Siriwardhana <i class="ri-lightbulb-flash-fill"></i>
+                Ravindu I. Siriwardhana &nbsp;
+                <i class="ri-shield-flash-line"></i>
               </h3>
 
               <p>

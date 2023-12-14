@@ -1,22 +1,47 @@
-import { Container, Row, Col } from "react-bootstrap";
-
 import logo from "../assets/img/my_logo.png";
 
 export const Footer = () => {
   return (
-    <footer className="footer">
-      <Container>
-        <Row className="align-items-center">
-          <Col size={12} sm={6}>
+    <div className="footer">
+      <div className="f_container">
+        <div className="align-items-center">
+          <div className="col">
             <img src={logo} alt="Logo" />
-          </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end">
+            <p>Imaginalytic LLC.</p>
+          </div>
+          <div className="discription">
+            <h4>About Company</h4>
+            <small>
+              Our company is a global powerhouse in computer science. We provide
+              comprehensive consulting, development, and research services,
+              empowering organizations to harness the full potential of
+              technology in an ever-evolving digital landscape.
+            </small>
+            <small>
+              <sup>©</sup>Copyright 2023. All Rights Reserved
+            </small>
+            <small>
+              <a href="/">Privacy Policy</a>
+            </small>
+          </div>
+          <div className="social">
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/ishara-siriwardhana-5b1732274/">
                 <i class="ri-linkedin-box-fill"></i>
               </a>
-              <a href="https://ishararaviget9.github.io/myprofile/">
-                <i class="ri-facebook-circle-fill"></i>
+              <a href="https://github.com/ishararaviget9/">
+                <i class="ri-github-fill"></i>
+              </a>
+              <a href="mailto:studymotivat01@gmail.com">
+                <i class="ri-mail-send-fill"></i>
+              </a>
+              <a href="https://discord.gg/ZCyEMb9y">
+                <i class="ri-discord-fill"></i>
+              </a>
+            </div>
+            <div className="social-icon">
+              <a href="https://t.me/DroidImaginalytic">
+                <i class="ri-telegram-fill"></i>
               </a>
               <a href="https://ishararaviget9.github.io/myprofile/">
                 <i class="ri-instagram-line"></i>
@@ -24,23 +49,14 @@ export const Footer = () => {
               <a href="https://ishararaviget9.github.io/myprofile/">
                 <i class="ri-youtube-fill"></i>
               </a>
-              <a href="https://github.com/ishararaviget9/">
-                <i class="ri-github-fill"></i>
-              </a>
-              <a href="https://discord.gg/ZCyEMb9y">
-                <i class="ri-discord-fill"></i>
-              </a>
-              <a href="https://t.me/DroidImaginalytic">
-                <i class="ri-telegram-fill"></i>
-              </a>
             </div>
             <p>
-              <i class="ri-copyright-line"></i> Copyright 2023. All Rights
-              Reserved
+              Let's connect with us and comfort with<br></br>
+              advanced technologies.
             </p>
-          </Col>
-        </Row>
-      </Container>
-    </footer>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };

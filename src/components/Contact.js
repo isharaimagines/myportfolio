@@ -29,7 +29,7 @@ export const Contact = () => {
 
   return (
     <section className="contact" id="connect">
-      <div className="container">
+      <div className="s_container">
         <h2 className="--text-center">Send your Comments</h2>
         <form ref={form} onSubmit={sendEmail} className="--form-control --card">
           <input

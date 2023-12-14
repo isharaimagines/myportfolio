@@ -57,12 +57,13 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <div className="container">
+      <div className="containers">
         <div className="aligh-items-center">
           <div className="animate__animated animate__fadeIn">
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`Hi! I'm Ishara Siriwardhana`}
+              {`Hi! I'm Ravindu Ishara;`}
+              <br />
               <span
                 className="txt-rotate"
                 dataPeriod="1000"

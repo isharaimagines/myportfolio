@@ -26,7 +26,7 @@ export const Projects = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Projects</h2>
+                  <h2>PROJECTS</h2>
                   <p>
                     For all of these projects, I would appreciate your feedback.
                   </p>
