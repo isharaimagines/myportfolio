@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="align-items-center">
           <div className="col">
             <img src={logo} alt="Logo" />
-            <p>Imaginalytic LLC.</p>
+            <p>Imaginalytic .org</p>
           </div>
           <div className="discription">
             <h4>About Company</h4>
