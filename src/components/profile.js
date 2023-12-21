@@ -1,5 +1,6 @@
 import "react-multi-carousel/lib/styles.css";
 import profileme from "../assets/img/1.jpg";
+
 export const Profile = () => {
   return (
     <section className="profile" id="profile">

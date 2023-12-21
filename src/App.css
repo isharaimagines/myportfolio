@@ -759,7 +759,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .footer .f_container .align-items-center .col {
   width: 140px;
-  height: 30%;
+  height: 50%;
+  text-align: center;
 }
 .footer .f_container .align-items-center .col img {
   width: 100%;
