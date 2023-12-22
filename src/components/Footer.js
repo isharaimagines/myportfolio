@@ -35,7 +35,7 @@ export const Footer = () => {
               <a href="mailto:studymotivat01@gmail.com">
                 <i class="ri-mail-send-fill"></i>
               </a>
-              <a href="https://discord.gg/ZCyEMb9y">
+              <a href="https://discord.gg/ZBPR3EP3B6">
                 <i class="ri-discord-fill"></i>
               </a>
             </div>
