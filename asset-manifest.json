@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/myportfolio/static/css/main.822aade0.css",
-    "main.js": "/myportfolio/static/js/main.99b5e8cd.js",
+    "main.css": "/myportfolio/static/css/main.8503712d.css",
+    "main.js": "/myportfolio/static/js/main.a1d74169.js",
     "static/js/787.1f11dfe9.chunk.js": "/myportfolio/static/js/787.1f11dfe9.chunk.js",
     "static/media/hoverH-img.png": "/myportfolio/static/media/hoverH-img.893a33e921647d5a731e.png",
     "static/media/pwithc_1.png": "/myportfolio/static/media/pwithc_1.35a4b40fb5fe75d81f4f.png",
+    "static/media/swoodwork.png": "/myportfolio/static/media/swoodwork.b3d7606e4c0229c17465.png",
     "static/media/banner-bg.jpg": "/myportfolio/static/media/banner-bg.f3cca68accacdec2776f.jpg",
     "static/media/1.jpg": "/myportfolio/static/media/1.79e882fdcd5d50272845.jpg",
     "static/media/my_logo.png": "/myportfolio/static/media/my_logo.d118d2477c2ca5d1e38a.png",
@@ -15,12 +16,12 @@
     "static/media/revicons.ttf": "/myportfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/myportfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/myportfolio/index.html",
-    "main.822aade0.css.map": "/myportfolio/static/css/main.822aade0.css.map",
-    "main.99b5e8cd.js.map": "/myportfolio/static/js/main.99b5e8cd.js.map",
+    "main.8503712d.css.map": "/myportfolio/static/css/main.8503712d.css.map",
+    "main.a1d74169.js.map": "/myportfolio/static/js/main.a1d74169.js.map",
     "787.1f11dfe9.chunk.js.map": "/myportfolio/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.822aade0.css",
-    "static/js/main.99b5e8cd.js"
+    "static/css/main.8503712d.css",
+    "static/js/main.a1d74169.js"
   ]
 }
