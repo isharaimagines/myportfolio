@@ -215,7 +215,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   margin-top: 0;
-  padding: 140px 0 100px 0;
+  padding: 65px 0 100px;
   background-image: url("./assets/img/banner-bg.jpg");
   background-position: top center;
   background-size: cover;
@@ -312,6 +312,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .banner p {
     text-align: left;
     width: 85%;
+  }
+  .banner {
+    padding: 140px 0 100px 0;
   }
 }
 /*---------------- Projects Css -----------------*/
