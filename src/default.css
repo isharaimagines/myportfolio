@@ -43,10 +43,10 @@ ol li:nth-child(2) .loader {
   width: 160px;
 }
 ol li:nth-child(3) .loader {
-  width: 130px;
+  width: 270px;
 }
 ol li:nth-child(4) .loader {
-  width: 270px;
+  width: 130px;
 }
 .skillColom ol,
 .skillColom ol li,
@@ -54,6 +54,12 @@ ol li:nth-child(4) .loader {
 .skillColom ol li p,
 .skillColom strong {
   font-family: "Space Mono", monospace;
+}
+.skillColom ol li strong .line {
+  display: flex;
+}
+.skillColom ol li strong .line .counts {
+  color: limegreen;
 }
 ol li .loader::before {
   content: "";
@@ -129,15 +135,17 @@ strong {
   flex-direction: column;
 }
 ol.alternating-colors li::before {
-  border-color: #2378d5;
+  border-color: #565656;
 }
 /* ----------------- anchors-------------------------*/
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #999999;
 }
-
+a:hover {
+  color: #2378d5;
+}
 @media (max-width: 768px) and (min-width: 577px),
   (max-width: 992px) and (min-width: 769px),
   (max-width: 576px) {
