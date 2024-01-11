@@ -2,11 +2,19 @@ import { Container, Row, Col, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/pwithc_1.png";
 import projImg2 from "../assets/img/swoodwork.png";
+import projImg3 from "../assets/img/restmenu.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects = [
+    {
+      title: "THE RESTAURANT MENU",
+      description:
+        "Develop a website for Restaurants, find out the Restaurant menu & services easily",
+      imgUrl: projImg3,
+      url: "https://img-restmenu.pages.dev/",
+    },
     {
       title: "PEACE with CONTENTMENT",
       description:
