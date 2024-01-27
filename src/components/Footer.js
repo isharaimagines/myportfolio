@@ -21,7 +21,7 @@ export const Footer = () => {
               <sup>©</sup>Copyright 2023. All Rights Reserved
             </small>
             <small>
-              <a href="/">Privacy Policy</a>
+              <a href="https://example.com">Privacy Policy</a>
             </small>
           </div>
           <div className="social">

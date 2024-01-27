@@ -22,6 +22,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 html {
@@ -546,8 +547,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .profile-bx .newColom .profile_me .image {
   margin: 10px;
-  width: 260px;
-  height: 260px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid #222;
 }
 
 .profile-bx .newColom .profile_me .myname {
@@ -563,7 +566,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #fafafa;
 }
 
 .profile-bx .newColom .discript {
@@ -608,14 +610,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .newColom .discript .icons .icon_logo {
-  padding: 8px;
-
+  padding: 7px 10px 6px 0px;
   border-radius: 50px;
   margin: 5px;
 }
 
 .newColom .discript .icons .icon_logo i {
-  padding: 8px;
+  padding: 10px;
+  font-size: 20px;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -627,10 +629,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: justify;
 }
 .newColom .discript .icons .icon_logo:nth-child(1) {
-  background: rgb(46, 98, 255, 0.2);
+  background: rgb(43, 202, 154, 0.2);
 }
 .newColom .discript .icons .icon_logo:nth-child(2) {
-  background: rgb(43, 202, 154, 0.2);
+  background: rgb(46, 98, 255, 0.2);
 }
 .newColom .discript .icons .icon_logo:nth-child(3) {
   background: rgb(251, 179, 24, 0.2);
@@ -638,18 +640,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .newColom .discript .icons .icon_logo:nth-child(4) {
   background: rgb(255, 95, 92, 0.2);
 }
+.newColom .discript .icons .icon_logo:nth-child(5) {
+  background: rgba(0, 0, 0, 0.2);
+}
 
 .newColom .discript .icons .icon_logo:nth-child(1) i {
-  background: #2c62ff;
+  background: #2bc999;
 }
 .newColom .discript .icons .icon_logo:nth-child(2) i {
-  background: #2bc999;
+  background: #2c62ff;
 }
 .newColom .discript .icons .icon_logo:nth-child(3) i {
   background: #fbb41a;
 }
 .newColom .discript .icons .icon_logo:nth-child(4) i {
   background: #ff5e5b;
+}
+.newColom .discript .icons .icon_logo:nth-child(5) i {
+  background: #000;
 }
 
 @media (max-width: 768px) and (min-width: 577px),

@@ -1,7 +1,37 @@
 import "react-multi-carousel/lib/styles.css";
 import profileme from "../assets/img/1.jpg";
+import React from "react"; // Replace with the actual path to your Batch component
+// Assuming you're using Bootstrap components
 
 export const Profile = () => {
+  const Batch = [
+    {
+      b_icon: "ri-medal-line",
+      b_batch: "Reword",
+      b_number: "8+",
+    },
+    {
+      b_icon: "ri-git-repository-fill",
+      b_batch: "Repository",
+      b_number: "9+",
+    },
+    {
+      b_icon: "ri-timer-flash-line",
+      b_batch: "Flash Time",
+      b_number: "-0.2s",
+    },
+    {
+      b_icon: "ri-infinity-line",
+      b_batch: "DevOps",
+      b_number: "20+",
+    },
+    {
+      b_icon: "ri-flask-fill",
+      b_batch: "Testing",
+      b_number: "ꝏ",
+    },
+  ];
+
   return (
     <section className="profile" id="profile">
       <div className="container">
@@ -33,30 +63,16 @@ export const Profile = () => {
             </div>
             <div className="discript">
               <div className="icons">
-                <div className="icon_logo">
-                  <i class="ri-medal-line"></i>
-                  <sub>Reword</sub>
-                  <sup>8+</sup>
-                  <div className="count"></div>
-                </div>
-                <div className="icon_logo">
-                  <i class="ri-git-repository-fill"></i>
-                  <sub>Git Repository</sub>
-                  <sup>9+</sup>
-                  <div className="count"></div>
-                </div>
-                <div className="icon_logo">
-                  <i class="ri-timer-flash-line"></i>
-                  <sub>Flash Time</sub>
-                  <sup>-0.2s</sup>
-                  <div className="count"></div>
-                </div>
-                <div className="icon_logo">
-                  <i class="ri-terminal-box-fill"></i>
-                  <sub>Development</sub>
-                  <sup>20+</sup>
-                  <div className="count"></div>
-                </div>
+                {Batch.map((Batch) => {
+                  return (
+                    <div className="icon_logo">
+                      <i class={Batch.b_icon}></i>
+                      <sub>{Batch.b_batch}</sub>
+                      <sup> &nbsp; {Batch.b_number}</sup>
+                      <div className="count"></div>
+                    </div>
+                  );
+                })}
               </div>
 
               <p>

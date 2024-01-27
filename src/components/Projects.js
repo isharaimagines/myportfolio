@@ -16,7 +16,7 @@ export const Projects = () => {
       url: "https://img-restmenu.pages.dev/",
     },
     {
-      title: "PEACE with CONTENTMENT",
+      title: "WITH me PEACE",
       description:
         "Develop a web application for Talk therapy, Mindfulness and meditation, Symptom tracking, Cognitive-behavioral therapy (CBT), Self-help resources",
       imgUrl: projImg1,
