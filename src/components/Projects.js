@@ -27,7 +27,7 @@ export const Projects = () => {
       description:
         "Develop a web application for Woodworking products marketplace and publish his skill and performance. ",
       imgUrl: projImg2,
-      url: "https://ishararaviget9.github.io/Woodworking/",
+      url: "https://ishararaviget9.github.io/woodwork-sin/",
     },
   ];
 
