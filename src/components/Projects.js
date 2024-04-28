@@ -20,14 +20,14 @@ export const Projects = () => {
       description:
         "Develop a web application for Talk therapy, Mindfulness and meditation, Symptom tracking, Cognitive-behavioral therapy (CBT), Self-help resources",
       imgUrl: projImg1,
-      url: "https://example.com",
+      url: "https://ishararaviget9.github.io/healthwebapp/",
     },
     {
       title: "SIRIWARDHANAN WOODWORK",
       description:
         "Develop a web application for Woodworking products marketplace and publish his skill and performance. ",
       imgUrl: projImg2,
-      url: "https://ishararaviget9.github.io/Woodworking/",
+      url: "https://ishararaviget9.github.io/woodwork-sin/",
     },
   ];
 
