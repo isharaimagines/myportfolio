@@ -39,8 +39,12 @@ export const Profile = () => {
           <h2>ABOUT ME</h2>
           <div className="newColom">
             <div className="profile_me">
-              <div className="image">
-                <img src={profileme} alt="profile_me"></img>
+              <div className="cover_image_frame">
+                <div className="image">
+                  <img src={profileme} alt="profile_me"></img>
+                </div>
+                <div class="pulse1"></div>
+                <div class="pulse2"></div>
               </div>
               <h3 className="myname">
                 Ravindu I. Siriwardhana &nbsp;

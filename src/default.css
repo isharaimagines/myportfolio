@@ -33,20 +33,20 @@
   display: block;
   --height-of-loader: 4px;
   --loader-color: #0071e2;
-  width: 190px;
+  width: 100%;
   height: var(--height-of-loader);
   border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.2);
   position: relative;
 }
 ol li:nth-child(2) .loader {
-  width: 160px;
+  width: 100%;
 }
 ol li:nth-child(3) .loader {
-  width: 270px;
+  width: 100%;
 }
 ol li:nth-child(4) .loader {
-  width: 130px;
+  width: 100%;
 }
 .skillColom ol,
 .skillColom ol li,
@@ -88,8 +88,6 @@ ol li:nth-child(4) .loader::before {
 
   100% {
     width: 0;
-    right: 0;
-    left: unset;
   }
 }
 
