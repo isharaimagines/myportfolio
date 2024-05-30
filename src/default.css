@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+:root {
+  --loader-width: 0%;
+}
+
 .skillsPage {
   padding: 0;
   position: relative;
@@ -33,21 +37,13 @@
   display: block;
   --height-of-loader: 4px;
   --loader-color: #0071e2;
-  width: 100%;
   height: var(--height-of-loader);
   border-radius: 30px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   position: relative;
 }
-ol li:nth-child(2) .loader {
-  width: 100%;
-}
-ol li:nth-child(3) .loader {
-  width: 100%;
-}
-ol li:nth-child(4) .loader {
-  width: 100%;
-}
+
 .skillColom ol,
 .skillColom ol li,
 .skillColom ol li strong,
@@ -67,28 +63,9 @@ ol li .loader::before {
   background: var(--loader-color);
   top: 0;
   left: 0;
-  width: 0%;
   height: 100%;
+  width: var(--loader-width, 0%);
   border-radius: 30px;
-  animation: moving 7s ease-in-out infinite;
-}
-ol li:nth-child(2) .loader::before {
-  animation: moving 8s ease-in-out infinite;
-}
-ol li:nth-child(3) .loader::before {
-  animation: moving 6s ease-in-out infinite;
-}
-ol li:nth-child(4) .loader::before {
-  animation: moving 10s ease-in-out infinite;
-}
-@keyframes moving {
-  50% {
-    width: 100%;
-  }
-
-  100% {
-    width: 0;
-  }
 }
 
 * {

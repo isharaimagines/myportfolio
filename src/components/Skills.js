@@ -2,51 +2,28 @@ import "../default.css";
 import React, { useState, useEffect } from "react";
 
 export const Skills = () => {
-  const [counts, setCount] = useState(1);
-  const [count2, setCount2] = useState(1);
-  const [count3, setCount3] = useState(1);
+  const [count, setCount] = useState(0);
+
+  const handleMouseOver = () => {
+    let i = count;
+
+    while (i < 100) {
+      i++;
+
+      setTimeout(() => {
+        setCount((prevCount) => {
+          if (prevCount < 100) {
+            return prevCount + 1;
+          }
+          return prevCount;
+        });
+      }, (i - count) * 50);
+    }
+  };
 
   useEffect(() => {
-    const interval1 = setInterval(() => {
-      if (counts < 100) {
-        setCount(counts + 1);
-      } else {
-        setCount(1); // Reset count to 1
-      }
-    }, 50);
-
-    return () => {
-      clearInterval(interval1);
-    };
-  }, [counts]);
-
-  useEffect(() => {
-    const interval2 = setInterval(() => {
-      if (count2 < 100) {
-        setCount2(count2 + 1);
-      } else {
-        setCount2(1); // Reset count to 1
-      }
-    }, 70);
-
-    return () => {
-      clearInterval(interval2);
-    };
-  }, [count2]);
-
-  useEffect(() => {
-    const interval3 = setInterval(() => {
-      if (count3 < 100) {
-        setCount3(count3 + 1);
-      } else {
-        setCount3(1); // Reset count to 1
-      }
-    }, 80);
-
-    return () => {
-      clearInterval(interval3);
-    };
-  }, [count3]);
+    document.documentElement.style.setProperty("--loader-width", `${count}%`);
+  }, [count]);
 
   return (
     <section className="skillsPage" id="skills">
@@ -56,15 +33,15 @@ export const Skills = () => {
           <div className="skillColom">
             <strong>Best First-Person Weapons</strong>
 
-            <ol class="alternating-colors">
+            <ol class="alternating-colors" onMouseOver={handleMouseOver}>
               <li>
                 <strong>
                   <div className="line">
-                    Fullstack Developer [<div className="counts">{counts}%</div>{" "}
+                    Fullstack Developer [<div className="counts">{count}%</div>{" "}
                     ]
                   </div>
 
-                  <div class="loader"></div>
+                  <div className="loader"></div>
                 </strong>
                 <p>
                   Who can build both the front end and the back end of a any
@@ -74,7 +51,7 @@ export const Skills = () => {
               <li>
                 <strong>
                   <div className="line">
-                    Computer Science [<div className="counts">{count3}%</div> ]
+                    Computer Science [<div className="counts">{count}%</div> ]
                   </div>
                   <div class="loader"></div>
                 </strong>
@@ -88,7 +65,7 @@ export const Skills = () => {
                 <strong>
                   <div className="line">
                     Artificial Intelligence (AI) [
-                    <div className="counts">{count2}%</div> ]
+                    <div className="counts">{count}%</div> ]
                   </div>
                   <div class="loader"></div>
                 </strong>
@@ -100,7 +77,7 @@ export const Skills = () => {
               <li>
                 <strong>
                   <div className="line">
-                    Generative AI [ <div className="counts">{counts}%</div> ]
+                    Generative AI [ <div className="counts">{count}%</div> ]
                   </div>
                   <div class="loader"></div>
                 </strong>
