@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/pwithc_1.png";
 import projImg2 from "../assets/img/swoodwork.png";
 import projImg3 from "../assets/img/restmenu.png";
+import projImg4 from "../assets/img/asciiimageart.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -18,16 +19,23 @@ export const Projects = () => {
     {
       title: "WITH me PEACE",
       description:
-        "Develop a web application for Talk therapy, Mindfulness and meditation, Symptom tracking, Cognitive-behavioral therapy (CBT), Self-help resources",
+        "Build a web application for Talk therapy, Mindfulness and meditation, Symptom tracking, Cognitive-behavioral therapy (CBT), Self-help resources",
       imgUrl: projImg1,
       url: "https://healthwebapp9.netlify.app/",
     },
     {
       title: "SIRIWARDHANAN WOODWORK",
       description:
-        "Develop a web application for Woodworking products marketplace and publish his skill and performance. ",
+        "Developed a web application for Woodworking products marketplace and publish his skill and performance. ",
       imgUrl: projImg2,
       url: "https://woodwork9.netlify.app/",
+    },
+    {
+      title: "ASCII IMG",
+      description:
+        "Buid a web application for ascii code base image generator using images.",
+      imgUrl: projImg4,
+      url: "https://asciiimage.netlify.app/",
     },
   ];
 
