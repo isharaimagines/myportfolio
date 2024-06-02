@@ -15,6 +15,8 @@ export const Projects = () => {
         "Develop a website for Restaurants, find out the Restaurant menu & services easily",
       imgUrl: projImg3,
       url: "https://img-restmenu.pages.dev/",
+      report_url:
+        "https://drive.google.com/file/d/1cgIuptM_xOjUVgew0VQcvmR3TrgNyHDJ/view?usp=drive_link",
     },
     {
       title: "WITH me PEACE",
