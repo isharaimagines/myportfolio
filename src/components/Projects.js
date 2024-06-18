@@ -24,6 +24,8 @@ export const Projects = () => {
         "Build a web application for Talk therapy, Mindfulness and meditation, Symptom tracking, Cognitive-behavioral therapy (CBT), Self-help resources",
       imgUrl: projImg1,
       url: "https://healthwebapp9.netlify.app/",
+      report_url:
+        "https://drive.google.com/file/d/16fU1VOUs_2J6k68vYibdwtkEMqEJgnKt/view?usp=drive_link",
     },
     {
       title: "SIRIWARDHANAN WOODWORK",
@@ -31,6 +33,8 @@ export const Projects = () => {
         "Developed a web application for Woodworking products marketplace and publish his skill and performance. ",
       imgUrl: projImg2,
       url: "https://woodwork9.netlify.app/",
+      report_url:
+        "https://drive.google.com/file/d/1FtfwvIz5mFQkTHZTNN9ODQZv0fSQgoCx/view?usp=drive_link",
     },
     {
       title: "ASCII IMG",
