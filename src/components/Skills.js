@@ -31,59 +31,142 @@ export const Skills = () => {
         <div className="skill-bx wow zoomIn">
           <h2>SKILLS</h2>
           <div className="skillColom">
-            <strong>Best First-Person Weapons</strong>
+            <strong>Computer Science Best First-Person Weapons</strong>
 
             <ol class="alternating-colors" onMouseOver={handleMouseOver}>
               <li>
                 <strong>
                   <div className="line">
-                    Fullstack Developer [<div className="counts">{count}%</div>{" "}
+                    Attention to detail. [<div className="counts">{count}%</div>{" "}
                     ]
                   </div>
 
                   <div className="loader"></div>
                 </strong>
                 <p>
-                  Who can build both the front end and the back end of a any
-                  platform
+                  In the computer science and IT field, attention to detail is
+                  vital. You must be able to look at long lines of code and
+                  identify anything amiss. Having an eye for small details can
+                  help you significantly impact projects. Listing on your résumé
+                  that you're detail-oriented shows potential employers that you
+                  understand how impactful small elements are to the larger
+                  project. Being a stickler for the details can be an immense
+                  strength.
                 </p>
               </li>
               <li>
                 <strong>
                   <div className="line">
-                    Computer Science [<div className="counts">{count}%</div> ]
+                    Creativity [<div className="counts">{count}%</div> ]
                   </div>
                   <div class="loader"></div>
                 </strong>
                 <p>
-                  Design and develop applications for various domains, such as
-                  artificial intelligence, web development, data science, and
-                  cybersecurity.
+                  Some people think computer science is all logical, dry work.
+                  But that's simply not true. Creativity is key to solving
+                  problems and creating functional, modern web applications and
+                  websites. When you put “creativity” on your résumé, the hiring
+                  manager can see that you're someone who'll think outside the
+                  box to solve problems and offer unique solutions.
                 </p>
               </li>
               <li>
                 <strong>
                   <div className="line">
-                    Artificial Intelligence (AI) [
+                    Communication [<div className="counts">{count}%</div> ]
+                  </div>
+                  <div class="loader"></div>
+                </strong>
+                <p>
+                  In the IT world, communication is critical. This soft skill is
+                  vital to helping you talk to clients, coworkers, and managers.
+                  Show that you're skilled at explaining your projects,
+                  objectives, and timelines. Listing “communication” on your
+                  résumé shows you recognize the importance of communicating
+                  clearly in your job. It's wise to show employers that you are
+                  willing to engage respectfully in workplace communication.
+                </p>
+              </li>
+              <li>
+                <strong>
+                  <div className="line">
+                    Time management [ <div className="counts">{count}%</div> ]
+                  </div>
+                  <div class="loader"></div>
+                </strong>
+                <p>
+                  In most jobs in the computer science field, there are tight
+                  deadlines, competing priorities, and quick transitions between
+                  tasks. Effective time management will help you stay on top of
+                  your various tasks and projects. By listing “time management”
+                  on your résumé, you show potential employers that you're
+                  dedicated to hitting deadlines and will be productive and
+                  efficient in your work.
+                </p>
+              </li>
+              <li>
+                <strong>
+                  <div className="line">
+                    Teamwork and cooperation [{" "}
                     <div className="counts">{count}%</div> ]
                   </div>
                   <div class="loader"></div>
                 </strong>
                 <p>
-                  It is a field of study in computer science that develops and
-                  studies intelligent machines.
+                  Being a good team player is key in any organization, but it's
+                  particularly important in computer science. Software
+                  engineers, data scientists, and IT professionals are often
+                  expected to collaborate with several different groups within
+                  an organization to ensure that timelines are met and
+                  expectations are fulfilled.
                 </p>
               </li>
               <li>
                 <strong>
                   <div className="line">
-                    Generative AI [ <div className="counts">{count}%</div> ]
+                    Analysis [ <div className="counts">{count}%</div> ]
                   </div>
                   <div class="loader"></div>
                 </strong>
                 <p>
-                  Artificial intelligence capable of generating text, images, or
-                  other media, using generative models.
+                  Computer science is a highly analytical field. You must be
+                  able to analyze hundreds of lines of code to troubleshoot and
+                  find solutions. Above all, being proactive is critical, as
+                  it's important to ensure quality at the creation stage to
+                  avoid costly fixes later. The most impactful type of analysis
+                  involves taking data and deriving conclusions that drive
+                  change and produce measurable results for an organization.
+                </p>
+              </li>
+              <li>
+                <strong>
+                  <div className="line">
+                    Organization [ <div className="counts">{count}%</div> ]
+                  </div>
+                  <div class="loader"></div>
+                </strong>
+                <p>
+                  Staying organized is vital to not only your productivity but
+                  also to a business's success. For instance, if you're working
+                  on complex lines of code and can't keep your work organized,
+                  you could make costly mistakes that could cause systems to
+                  stop functioning or even expose sensitive data.
+                </p>
+              </li>
+              <li>
+                <strong>
+                  <div className="line">
+                    Training and teaching [{" "}
+                    <div className="counts">{count}%</div> ]
+                  </div>
+                  <div class="loader"></div>
+                </strong>
+                <p>
+                  Showing that you're a willing teacher can help you stand out
+                  when searching for a job. Someone with a mindset to lift and
+                  guide others can significantly benefit any organization. Being
+                  technically proficient is important, but training and
+                  leadership skills can set you apart.
                 </p>
               </li>
             </ol>

@@ -17,6 +17,13 @@ export const Projects = () => {
       url: "https://img-restmenu.pages.dev/",
       report_url:
         "https://drive.google.com/file/d/1cgIuptM_xOjUVgew0VQcvmR3TrgNyHDJ/view?usp=drive_link",
+      imgClasses: [
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
+      ],
     },
     {
       title: "WITH me PEACE",
@@ -26,6 +33,16 @@ export const Projects = () => {
       url: "https://healthwebapp9.netlify.app/",
       report_url:
         "https://drive.google.com/file/d/16fU1VOUs_2J6k68vYibdwtkEMqEJgnKt/view?usp=drive_link",
+      imgClasses: [
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
+      ],
     },
     {
       title: "SIRIWARDHANAN WOODWORK",
@@ -35,6 +52,16 @@ export const Projects = () => {
       url: "https://woodwork9.netlify.app/",
       report_url:
         "https://drive.google.com/file/d/1FtfwvIz5mFQkTHZTNN9ODQZv0fSQgoCx/view?usp=drive_link",
+      imgClasses: [
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
+      ],
     },
     {
       title: "ASCII IMG",
@@ -42,6 +69,17 @@ export const Projects = () => {
         "Buid a web application for ascii code base image generator using images.",
       imgUrl: projImg4,
       url: "https://asciiimage.netlify.app/",
+      report_url:
+        "https://drive.google.com/file/d/1MEh1a96hJ80GreJn2KJgIbtHA_HezePS/view?usp=drive_link",
+      imgClasses: [
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
+      ],
     },
   ];
 
