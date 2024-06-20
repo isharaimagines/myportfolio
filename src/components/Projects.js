@@ -4,6 +4,7 @@ import projImg1 from "../assets/img/pwithc_1.png";
 import projImg2 from "../assets/img/swoodwork.png";
 import projImg3 from "../assets/img/restmenu.png";
 import projImg4 from "../assets/img/asciiimageart.png";
+import projImg5 from "../assets/img/whatsai_load.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -79,6 +80,26 @@ export const Projects = () => {
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
+      ],
+    },
+    {
+      title: "WhatsAI",
+      description:
+        "This project involves the development of a chatbot web application designed to enable users to interact with an AI model.",
+      imgUrl: projImg5,
+      url: "https://whatsai.netlify.app/",
+      report_url: "",
+      imgClasses: [
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/googlecloud-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tensorflow-colored.svg",
       ],
     },
   ];

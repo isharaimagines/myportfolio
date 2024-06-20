@@ -37,8 +37,7 @@ export const Skills = () => {
               <li>
                 <strong>
                   <div className="line">
-                    Attention to detail. [<div className="counts">{count}%</div>{" "}
-                    ]
+                    Attention to detail [<div className="counts">BEST</div> ]
                   </div>
 
                   <div className="loader"></div>
@@ -57,7 +56,7 @@ export const Skills = () => {
               <li>
                 <strong>
                   <div className="line">
-                    Creativity [<div className="counts">{count}%</div> ]
+                    Creativity [<div className="counts">BETTER</div> ]
                   </div>
                   <div class="loader"></div>
                 </strong>
@@ -73,7 +72,7 @@ export const Skills = () => {
               <li>
                 <strong>
                   <div className="line">
-                    Communication [<div className="counts">{count}%</div> ]
+                    Communication [<div className="counts">BETTER</div> ]
                   </div>
                   <div class="loader"></div>
                 </strong>
@@ -90,7 +89,7 @@ export const Skills = () => {
               <li>
                 <strong>
                   <div className="line">
-                    Time management [ <div className="counts">{count}%</div> ]
+                    Time management [ <div className="counts">BEST</div> ]
                   </div>
                   <div class="loader"></div>
                 </strong>
@@ -107,8 +106,8 @@ export const Skills = () => {
               <li>
                 <strong>
                   <div className="line">
-                    Teamwork and cooperation [{" "}
-                    <div className="counts">{count}%</div> ]
+                    Teamwork and cooperation [<div className="counts">BEST</div>{" "}
+                    ]
                   </div>
                   <div class="loader"></div>
                 </strong>
@@ -124,7 +123,7 @@ export const Skills = () => {
               <li>
                 <strong>
                   <div className="line">
-                    Analysis [ <div className="counts">{count}%</div> ]
+                    Analysis [ <div className="counts">BEST</div> ]
                   </div>
                   <div class="loader"></div>
                 </strong>
@@ -141,7 +140,7 @@ export const Skills = () => {
               <li>
                 <strong>
                   <div className="line">
-                    Organization [ <div className="counts">{count}%</div> ]
+                    Organization [ <div className="counts">BEST</div> ]
                   </div>
                   <div class="loader"></div>
                 </strong>
@@ -156,8 +155,8 @@ export const Skills = () => {
               <li>
                 <strong>
                   <div className="line">
-                    Training and teaching [{" "}
-                    <div className="counts">{count}%</div> ]
+                    Training and teaching [<div className="counts">BETTER</div>{" "}
+                    ]
                   </div>
                   <div class="loader"></div>
                 </strong>
