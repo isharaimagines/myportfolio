@@ -468,6 +468,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 5px;
   font-weight: bold;
   letter-spacing: 5px;
+  text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
   color: #2c9caf;
@@ -1123,3 +1124,5 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     opacity: 0;
   }
 }
+
+/*--------------------------*/

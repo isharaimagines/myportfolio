@@ -1,5 +1,5 @@
 import "react-multi-carousel/lib/styles.css";
-import profileme from "../assets/img/1.jpeg";
+import profileme from "../assets/img/dpsad.jpg";
 import React from "react"; // Replace with the actual path to your Batch component
 // Assuming you're using Bootstrap components
 

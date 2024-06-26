@@ -1,177 +1,158 @@
 import "../default.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
+import CardSider from "./CardSider";
+import htmlIcon from "../assets/img/HTML.png";
+import cssIcon from "../assets/img/css.png";
+import jsIcon from "../assets/img/javaScript.png";
+import reactIcon from "../assets/img/ReactJs.png";
+import nodeIcon from "../assets/img/NodeJs.png";
+import pythonIcon from "../assets/img/python.png";
+import cIcon from "../assets/img/c.png";
+import c2plusIcon from "../assets/img/C2Plus.png";
+import csharpIcon from "../assets/img/Csharp.png";
 
-export const Skills = () => {
-  const [count, setCount] = useState(0);
+const Skills = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleMouseOver = () => {
-    let i = count;
+  const cards = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }];
 
-    while (i < 100) {
-      i++;
+  const prevSlide = useCallback(() => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + cards.length) % cards.length
+    );
+  }, [cards.length]);
 
-      setTimeout(() => {
-        setCount((prevCount) => {
-          if (prevCount < 100) {
-            return prevCount + 1;
-          }
-          return prevCount;
-        });
-      }, (i - count) * 50);
-    }
-  };
+  const nextSlide = useCallback(() => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+  }, [cards.length]);
 
   useEffect(() => {
-    document.documentElement.style.setProperty("--loader-width", `${count}%`);
-  }, [count]);
+    const autoSlide = setInterval(() => {
+      nextSlide();
+    }, 12000);
+
+    return () => clearInterval(autoSlide);
+  }, [nextSlide]);
 
   return (
     <section className="skillsPage" id="skills">
       <div className="container">
         <div className="skill-bx wow zoomIn">
           <h2>SKILLS</h2>
+          <p>Computer Science Best First-Person Weapons</p>
           <div className="skillColom">
-            <strong>Computer Science Best First-Person Weapons</strong>
-
-            <ol class="alternating-colors" onMouseOver={handleMouseOver}>
-              <li>
-                <strong>
-                  <div className="line">
-                    Attention to detail [<div className="counts">BEST</div> ]
-                  </div>
-
-                  <div className="loader"></div>
-                </strong>
-                <p>
-                  In the computer science and IT field, attention to detail is
-                  vital. You must be able to look at long lines of code and
-                  identify anything amiss. Having an eye for small details can
-                  help you significantly impact projects. Listing on your résumé
-                  that you're detail-oriented shows potential employers that you
-                  understand how impactful small elements are to the larger
-                  project. Being a stickler for the details can be an immense
-                  strength.
-                </p>
-              </li>
-              <li>
-                <strong>
-                  <div className="line">
-                    Creativity [<div className="counts">BETTER</div> ]
-                  </div>
-                  <div class="loader"></div>
-                </strong>
-                <p>
-                  Some people think computer science is all logical, dry work.
-                  But that's simply not true. Creativity is key to solving
-                  problems and creating functional, modern web applications and
-                  websites. When you put “creativity” on your résumé, the hiring
-                  manager can see that you're someone who'll think outside the
-                  box to solve problems and offer unique solutions.
-                </p>
-              </li>
-              <li>
-                <strong>
-                  <div className="line">
-                    Communication [<div className="counts">BETTER</div> ]
-                  </div>
-                  <div class="loader"></div>
-                </strong>
-                <p>
-                  In the IT world, communication is critical. This soft skill is
-                  vital to helping you talk to clients, coworkers, and managers.
-                  Show that you're skilled at explaining your projects,
-                  objectives, and timelines. Listing “communication” on your
-                  résumé shows you recognize the importance of communicating
-                  clearly in your job. It's wise to show employers that you are
-                  willing to engage respectfully in workplace communication.
-                </p>
-              </li>
-              <li>
-                <strong>
-                  <div className="line">
-                    Time management [ <div className="counts">BEST</div> ]
-                  </div>
-                  <div class="loader"></div>
-                </strong>
-                <p>
-                  In most jobs in the computer science field, there are tight
-                  deadlines, competing priorities, and quick transitions between
-                  tasks. Effective time management will help you stay on top of
-                  your various tasks and projects. By listing “time management”
-                  on your résumé, you show potential employers that you're
-                  dedicated to hitting deadlines and will be productive and
-                  efficient in your work.
-                </p>
-              </li>
-              <li>
-                <strong>
-                  <div className="line">
-                    Teamwork and cooperation [<div className="counts">BEST</div>{" "}
-                    ]
-                  </div>
-                  <div class="loader"></div>
-                </strong>
-                <p>
-                  Being a good team player is key in any organization, but it's
-                  particularly important in computer science. Software
-                  engineers, data scientists, and IT professionals are often
-                  expected to collaborate with several different groups within
-                  an organization to ensure that timelines are met and
-                  expectations are fulfilled.
-                </p>
-              </li>
-              <li>
-                <strong>
-                  <div className="line">
-                    Analysis [ <div className="counts">BEST</div> ]
-                  </div>
-                  <div class="loader"></div>
-                </strong>
-                <p>
-                  Computer science is a highly analytical field. You must be
-                  able to analyze hundreds of lines of code to troubleshoot and
-                  find solutions. Above all, being proactive is critical, as
-                  it's important to ensure quality at the creation stage to
-                  avoid costly fixes later. The most impactful type of analysis
-                  involves taking data and deriving conclusions that drive
-                  change and produce measurable results for an organization.
-                </p>
-              </li>
-              <li>
-                <strong>
-                  <div className="line">
-                    Organization [ <div className="counts">BEST</div> ]
-                  </div>
-                  <div class="loader"></div>
-                </strong>
-                <p>
-                  Staying organized is vital to not only your productivity but
-                  also to a business's success. For instance, if you're working
-                  on complex lines of code and can't keep your work organized,
-                  you could make costly mistakes that could cause systems to
-                  stop functioning or even expose sensitive data.
-                </p>
-              </li>
-              <li>
-                <strong>
-                  <div className="line">
-                    Training and teaching [<div className="counts">BETTER</div>{" "}
-                    ]
-                  </div>
-                  <div class="loader"></div>
-                </strong>
-                <p>
-                  Showing that you're a willing teacher can help you stand out
-                  when searching for a job. Someone with a mindset to lift and
-                  guide others can significantly benefit any organization. Being
-                  technically proficient is important, but training and
-                  leadership skills can set you apart.
-                </p>
-              </li>
-            </ol>
+            <div className="slider-container">
+              <button className="slider-button prev" onClick={prevSlide}>
+                <i class="ri-arrow-left-wide-line"></i>
+              </button>
+              <div className="slider">
+                <div
+                  className="slider-track"
+                  style={{
+                    transform: `translateX(-${currentIndex * 835}px)`,
+                  }}
+                >
+                  <CardSider
+                    imgSrc={htmlIcon}
+                    subText="front-end"
+                    title="HTML"
+                    description="The content of the website allows establishing connections between the organization and various elements."
+                    proficiency="EXCELLENT"
+                    projects="5"
+                    achievements="6+"
+                    backgroundColor="#ff6d00"
+                  />
+                  <CardSider
+                    imgSrc={cssIcon}
+                    subText="front-end"
+                    title="CSS"
+                    description="Presentation and styling of documents written in markup languages like HTML or XML"
+                    proficiency="EXCELLENT"
+                    projects="5"
+                    achievements="6+"
+                    backgroundColor="#35c1f1"
+                  />
+                  <CardSider
+                    imgSrc={jsIcon}
+                    subText="front-end"
+                    title="Javascript"
+                    description="Allows to implement complex features on web pages"
+                    proficiency="EXCELLENT"
+                    projects="5"
+                    achievements="6+"
+                    backgroundColor="#ffd600"
+                  />
+                  <CardSider
+                    imgSrc={reactIcon}
+                    subText="front-end"
+                    title="React JS"
+                    description="Build encapsulated components that manage their own state, then compose them to make complex UIs"
+                    proficiency="BETTER"
+                    projects="5"
+                    achievements="6+"
+                    backgroundColor="#222222"
+                  />
+                  <CardSider
+                    imgSrc={nodeIcon}
+                    subText="back-end"
+                    title="Node JS"
+                    description="JavaScript runtime environment that allows to run JavaScript code outside of a web browser"
+                    proficiency="EXCELLENT"
+                    projects="5"
+                    achievements="6+"
+                    backgroundColor="#689f63"
+                  />
+                  <CardSider
+                    imgSrc={pythonIcon}
+                    subText="versatility & extensive"
+                    title="Python"
+                    description="Various applications ranging from web development and scientific computing to automation and data analysis"
+                    proficiency="GREAT"
+                    projects="0"
+                    achievements="0"
+                    backgroundColor="#0277bd"
+                  />
+                  <CardSider
+                    imgSrc={cIcon}
+                    subText="procedural-pro"
+                    title="C"
+                    description="System programming, emphasizing efficiency, control over hardware, and low-level manipulation"
+                    proficiency="GREAT"
+                    projects="0"
+                    achievements="0"
+                    backgroundColor="#303799"
+                  />
+                  <CardSider
+                    imgSrc={c2plusIcon}
+                    subText="multi-paradigm pro"
+                    title="C++"
+                    description="C programming while adding support for object-oriented programming (OOP) and generic programming"
+                    proficiency="GREAT"
+                    projects="0"
+                    achievements="0"
+                    backgroundColor="#3574d3"
+                  />
+                  <CardSider
+                    imgSrc={csharpIcon}
+                    subText="multi-paradigm pro"
+                    title="C#"
+                    description=".NET framework and is designed to be modern, versatile, and highly integrated with Microsoft technologies"
+                    proficiency="GREAT"
+                    projects="0"
+                    achievements="0"
+                    backgroundColor="#37474f"
+                  />
+                </div>
+              </div>
+              <button className="slider-button next" onClick={nextSlide}>
+                <i class="ri-arrow-right-wide-line"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 };
+
+export default Skills;

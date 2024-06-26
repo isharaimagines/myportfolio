@@ -18,6 +18,10 @@
   text-align: center;
   padding: 60px 50px;
 }
+.skill-bx h2 {
+  font-family: "Preahvihear", sans-serif;
+  font-size: 50px;
+}
 .skill-bx .skillColom {
   width: 100%;
   display: flex;
@@ -26,108 +30,115 @@
   align-items: center;
 }
 
-/*-------------- Skills Css --------------*/
-
-.myskills {
-  float: left;
-  clear: both;
+/*--------------------------*/
+/* src/CardSlider.css */
+.skillColom .slider-container {
   width: 100%;
-}
-.loader {
-  display: block;
-  --height-of-loader: 4px;
-  --loader-color: #0071e2;
-  height: var(--height-of-loader);
-  border-radius: 30px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-
-.skillColom ol,
-.skillColom ol li,
-.skillColom ol li strong,
-.skillColom ol li p,
-.skillColom strong {
-  font-family: "Space Mono", monospace;
-}
-.skillColom ol li strong .line {
   display: flex;
-}
-.skillColom ol li strong .line .counts {
-  color: limegreen;
-}
-ol li .loader::before {
-  content: "";
-  position: absolute;
-  background: var(--loader-color);
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: var(--loader-width, 0%);
-  border-radius: 30px;
-}
-
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
-  letter-spacing: -0.25px;
-}
-.skill-bx h2 {
-  font-family: "Preahvihear", sans-serif;
-  font-size: 50px;
-}
-ol {
-  margin-top: 50px;
-  padding-left: 50px;
-}
-
-li {
-  color: #565656;
-  padding-left: 16px;
-  margin-top: 24px;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: left;
 }
-li:before {
-  content: "";
-  display: block;
-  height: 42px;
-  width: 42px;
-  border-radius: 50%;
-  border: 2px solid #ddd;
-  position: absolute;
-  top: -12px;
-  left: -46px;
+.skillColom .slider-container .slider {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
 }
-
-strong {
-  color: #e3e3e3;
+.skillColom .slider-container .slider .slider-track {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+  transition: transform 0.5s ease-in-out;
+}
+.skillColom .slider-container .slider .slider-track .card-sider {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  width: 400px;
+  background: #1a1720;
+  margin: 20px;
+  border-radius: 8px;
 }
-ol.alternating-colors li::before {
-  border-color: #565656;
+.skillColom .slider-container .slider .slider-track .card-sider .image_slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 250px;
+  padding: 10px;
 }
-/* ----------------- anchors-------------------------*/
+.skillColom
+  .slider-container
+  .slider
+  .slider-track
+  .card-sider
+  .image_slider
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.skillColom .slider-container .slider .slider-track .card-sider .text {
+  position: relative;
+  width: 100%;
+  color: white;
+  padding: 20px;
+}
+.skillColom .slider-container .slider .slider-track .card-sider .text p {
+  text-align: justify;
+}
+.skillColom .slider-container .slider .slider-track .card-sider .types_box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 
-a {
-  text-decoration: none;
-  color: #999999;
+  color: #fafafa;
 }
-a:hover {
-  color: #2378d5;
+.skillColom
+  .slider-container
+  .slider
+  .slider-track
+  .card-sider
+  .types_box
+  .box_cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
 }
-@media (max-width: 768px) and (min-width: 577px),
-  (max-width: 992px) and (min-width: 769px),
-  (max-width: 576px) {
-  .App {
-    overflow-x: hidden;
-  }
-  .skill-bx .skillColom {
-    margin-top: 40px;
-  }
+.skillColom
+  .slider-container
+  .slider
+  .slider-track
+  .card-sider
+  .types_box
+  .box_cart:first-child {
+  background: #17141d;
+  color: #fafafa;
+}
+.skillColom
+  .slider-container
+  .slider
+  .slider-track
+  .card-sider
+  .types_box
+  .box_cart
+  h1 {
+  font-size: 1.6rem;
+}
+.skillColom .slider-container .slider-button {
+  font-size: 30px;
+  color: #fafafa;
+  padding: 20px;
 }
