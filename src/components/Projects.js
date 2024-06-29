@@ -88,7 +88,8 @@ export const Projects = () => {
         "This project involves the development of a chatbot web application designed to enable users to interact with an AI model.",
       imgUrl: projImg5,
       url: "https://whatsai.netlify.app/",
-      report_url: "",
+      report_url:
+        "https://drive.google.com/file/d/1bmYhu7vgWkTDd1ho_Zbv41_RJulhWfje/view?usp=drive_link",
       imgClasses: [
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",

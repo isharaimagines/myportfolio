@@ -2,7 +2,7 @@ import logo from "../assets/img/my_logo.png";
 
 export const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="connect">
       <div className="f_container">
         <div className="align-items-center">
           <div className="col">
