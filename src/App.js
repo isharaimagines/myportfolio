@@ -1,21 +1,17 @@
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./assets/testapp.css";
 import { NavBar } from "./components/NavBar";
-import { Banner } from "./components/Banner";
-import { Profile } from "./components/profile";
-import { Projects } from "./components/Projects";
-
 import { Footer } from "./components/Footer";
-import Skills from "./components/Skills";
+import { Home } from "./components/Home";
+import { Expertices } from "./components/Expertices";
+import { Projetcz } from "./components/Projetcz";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Banner />
-      <Profile />
-      <Skills />
-      <Projects />
+      <Home />
+      <Expertices />
+      <Projetcz />
       <Footer />
     </div>
   );

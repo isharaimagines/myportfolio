@@ -1,23 +1,18 @@
-import { Container, Row, Col, Tab } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
+import "../assets/testcss.css";
+import React from "react";
 import projImg1 from "../assets/img/pwithc_1.png";
 import projImg2 from "../assets/img/swoodwork.png";
 import projImg3 from "../assets/img/restmenu.png";
-import projImg4 from "../assets/img/asciiimageart.png";
+import projImg4 from "../assets/img/asciiART.png";
 import projImg5 from "../assets/img/whatsai_load.png";
-import "animate.css";
-import TrackVisibility from "react-on-screen";
 
-export const Projects = () => {
-  const projects = [
+export const Projetcz = () => {
+  const projetcClasses = [
     {
+      imgClass: projImg3,
       title: "THE RESTAURANT MENU",
       description:
         "Develop a website for Restaurants, find out the Restaurant menu & services easily",
-      imgUrl: projImg3,
-      url: "https://img-restmenu.pages.dev/",
-      report_url:
-        "https://drive.google.com/file/d/1cgIuptM_xOjUVgew0VQcvmR3TrgNyHDJ/view?usp=drive_link",
       imgClasses: [
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg",
@@ -25,15 +20,15 @@ export const Projects = () => {
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
       ],
+      siteLink: "https://img-restmenu.pages.dev/",
+      reportLink:
+        "https://drive.google.com/file/d/1cgIuptM_xOjUVgew0VQcvmR3TrgNyHDJ/view?usp=drive_link",
     },
     {
+      imgClass: projImg1,
       title: "WITH me PEACE",
       description:
         "Build a web application for Talk therapy, Mindfulness and meditation, Symptom tracking, Cognitive-behavioral therapy (CBT), Self-help resources",
-      imgUrl: projImg1,
-      url: "https://healthwebapp9.netlify.app/",
-      report_url:
-        "https://drive.google.com/file/d/16fU1VOUs_2J6k68vYibdwtkEMqEJgnKt/view?usp=drive_link",
       imgClasses: [
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
@@ -44,15 +39,15 @@ export const Projects = () => {
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
       ],
+      siteLink: "https://withmepeace.netlify.app/",
+      reportLink:
+        "https://drive.google.com/file/d/16fU1VOUs_2J6k68vYibdwtkEMqEJgnKt/view?usp=drive_link",
     },
     {
+      imgClass: projImg2,
       title: "SIRIWARDHANAN WOODWORK",
       description:
         "Developed a web application for Woodworking products marketplace and publish his skill and performance. ",
-      imgUrl: projImg2,
-      url: "https://woodwork9.netlify.app/",
-      report_url:
-        "https://drive.google.com/file/d/1FtfwvIz5mFQkTHZTNN9ODQZv0fSQgoCx/view?usp=drive_link",
       imgClasses: [
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
@@ -63,14 +58,17 @@ export const Projects = () => {
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
       ],
+      siteLink: "https://woodwork9.netlify.app/",
+      reportLink:
+        "https://drive.google.com/file/d/1FtfwvIz5mFQkTHZTNN9ODQZv0fSQgoCx/view?usp=drive_link",
     },
     {
       title: "ASCII IMG",
       description:
         "Buid a web application for ascii code base image generator using images.",
-      imgUrl: projImg4,
-      url: "https://asciiimage.netlify.app/",
-      report_url:
+      imgClass: projImg4,
+      siteLink: "https://asciiimage.netlify.app/",
+      reportLink:
         "https://drive.google.com/file/d/1MEh1a96hJ80GreJn2KJgIbtHA_HezePS/view?usp=drive_link",
       imgClasses: [
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
@@ -86,9 +84,9 @@ export const Projects = () => {
       title: "WhatsAI",
       description:
         "This project involves the development of a chatbot web application designed to enable users to interact with an AI model.",
-      imgUrl: projImg5,
-      url: "https://whatsai.netlify.app/",
-      report_url:
+      imgClass: projImg5,
+      siteLink: "https://whatsai.netlify.app/",
+      reportLink:
         "https://drive.google.com/file/d/1bmYhu7vgWkTDd1ho_Zbv41_RJulhWfje/view?usp=drive_link",
       imgClasses: [
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
@@ -103,46 +101,48 @@ export const Projects = () => {
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tensorflow-colored.svg",
       ],
     },
+    // Add more project objects here
   ];
 
   return (
-    <section className="project" id="projects">
-      <Container>
-        <Row>
-          <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <h2>PROJECTS</h2>
-                  <p>
-                    For all of these projects, I would appreciate your feedback.
-                  </p>
-                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Tab.Content
-                      id="slideInUp"
-                      className={
-                        isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
-                    >
-                      <Tab.Pane eventKey="first">
-                        <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
-                        </Row>
-                      </Tab.Pane>
-                    </Tab.Content>
-                  </Tab.Container>
+    <>
+      <div className="project" id="projects">
+        <div className="project_right">
+          <div className="right_line_1">
+            <h1>PROJECTS</h1>
+          </div>
+          {projetcClasses.map((project, index) => (
+            <div key={index} className="right_line_2">
+              <div className="line_2_left">
+                <div className="images">
+                  <img src={project.imgClass} alt="alt" />
                 </div>
-              )}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+                <div className="feath">
+                  <h1 className="title">{project.title}</h1>
+                  <h2 className="des">{project.description}</h2>
+                  <div className="Icons">
+                    {project.imgClasses.map((imgClass, index) => (
+                      <img key={index} src={imgClass} alt="view" />
+                    ))}
+                  </div>
+                  <div className="btns">
+                    <div className="site_btn">
+                      <a href={project.siteLink} className="weblink">
+                        <i className="ri-link"></i> Site
+                      </a>
+                    </div>
+                    <div className="report_btn">
+                      <a href={project.reportLink} className="report">
+                        <i className="ri-file-list-3-line"></i> Report
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };

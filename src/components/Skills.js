@@ -39,7 +39,7 @@ const Skills = () => {
       <div className="container">
         <div className="skill-bx wow zoomIn">
           <h2>SKILLS</h2>
-          <p>Computer Science Best First-Person Weapons</p>
+
           <div className="skillColom">
             <div className="slider-container">
               <button className="slider-button prev" onClick={prevSlide}>
