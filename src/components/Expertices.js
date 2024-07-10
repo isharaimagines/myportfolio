@@ -1,10 +1,5 @@
 import "../assets/testcss.css";
-import web from "../assets/img/icons8-webpages-96.png";
-import soft from "../assets/img/icons8-software-development-96.png";
-import front from "../assets/img/icons8-react-js-96.png";
-import flutter from "../assets/img/icons8-flutter-96.png";
-import ai from "../assets/img/icons8-ai-96.png";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 export const Expertices = () => {
   return (
@@ -18,7 +13,9 @@ export const Expertices = () => {
             <div className="line_2_left">
               <div
                 className="icons"
-                style={{ "--background-image": `url(${soft})` }}
+                style={{
+                  "--background-image": `url(https://skillicons.dev/icons?i=visualstudio)`,
+                }}
               >
                 Software Development
               </div>
@@ -36,7 +33,9 @@ export const Expertices = () => {
             <div className="line_2_left">
               <div
                 className="icons"
-                style={{ "--background-image": `url(${front})` }}
+                style={{
+                  "--background-image": `url(https://skillicons.dev/icons?i=react)`,
+                }}
               >
                 Frontend Dev React, NextJS
               </div>
@@ -54,7 +53,9 @@ export const Expertices = () => {
             <div className="line_2_left">
               <div
                 className="icons"
-                style={{ "--background-image": `url(${flutter})` }}
+                style={{
+                  "--background-image": `url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg)`,
+                }}
               >
                 Flutter Dev Android
               </div>
@@ -75,7 +76,9 @@ export const Expertices = () => {
             <div className="line_2_left">
               <div
                 className="icons"
-                style={{ "--background-image": `url(${web})` }}
+                style={{
+                  "--background-image": `url(https://skillicons.dev/icons?i=vscode)`,
+                }}
               >
                 Web Development
               </div>
@@ -85,18 +88,19 @@ export const Expertices = () => {
                   <h1>{"</h2>"}</h1>
                 </div>
                 <p>
-                  Involves building, creating, and maintaining websites. It
-                  encompasses a wide range of tasks, from coding to technical
-                  design and optimizing website performance on the internet
+                  Proficient in responsive design, front-end and back-end
+                  technologies, also modern frameworks like React and Node.js.
                 </p>
               </div>
             </div>
             <div className="line_2_left">
               <div
                 className="icons"
-                style={{ "--background-image": `url(${ai})` }}
+                style={{
+                  "--background-image": `url(https://cdn.simpleicons.org/opencv/5C3EE8)`,
+                }}
               >
-                Generative AI
+                AI Model Development
               </div>
               <div className="title">
                 <div className="htag">
@@ -104,9 +108,9 @@ export const Expertices = () => {
                   <h1>{"</h2>"}</h1>
                 </div>
                 <p>
-                  Subfield of artificial intelligence that uses computer
-                  algorithms to generate outputs that resemble human-created
-                  content
+                  Skilled in data preprocessing, model building, evaluation,
+                  deployment, and monitoring, using cutting-edge techniques and
+                  tools.
                 </p>
               </div>
             </div>

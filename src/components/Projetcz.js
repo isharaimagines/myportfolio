@@ -119,7 +119,7 @@ export const Projetcz = () => {
                 </div>
                 <div className="feath">
                   <h1 className="title">{project.title}</h1>
-                  <h2 className="des">{project.description}</h2>
+                  <h3 className="des">{project.description}</h3>
                   <div className="Icons">
                     {project.imgClasses.map((imgClass, index) => (
                       <img key={index} src={imgClass} alt="view" />
@@ -127,14 +127,23 @@ export const Projetcz = () => {
                   </div>
                   <div className="btns">
                     <div className="site_btn">
-                      <a href={project.siteLink} className="weblink">
-                        <i className="ri-link"></i> Site
-                      </a>
-                    </div>
-                    <div className="report_btn">
-                      <a href={project.reportLink} className="report">
-                        <i className="ri-file-list-3-line"></i> Report
-                      </a>
+                      <p>
+                        Here the end user validates the final product. It
+                        assesses product functionality, reliability, usability,
+                        and compatibility.
+                        <a href={project.siteLink} className="weblink">
+                          you can try beta vesion of the project visit&nbsp;
+                          <i class="ri-external-link-line"></i>
+                        </a>
+                        The user's attention on advantages that project can
+                        provide and, thus, by enriching the user's experience,
+                        it facilitates the business process bringing benefits to
+                        the Business Owner as well.
+                        <a href={project.reportLink} className="report">
+                          for more details read the project documentation&nbsp;
+                          <i class="ri-external-link-line"></i>
+                        </a>
+                      </p>
                     </div>
                   </div>
                 </div>
