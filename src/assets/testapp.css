@@ -5,6 +5,7 @@
   bottom: 0;
   height: auto;
   z-index: 100;
+  font-family: "Victor Mono", monospace;
 }
 .nav_head > ul {
   height: 100%;
@@ -28,12 +29,17 @@
   border-radius: 10px;
 }
 .nav_head li.active {
-  background: wheat;
+  background: #c4fedf;
 }
 .nav_head li a:link,
 .nav_head li a:visited,
 .nav_head li a:focus {
   color: #121212;
+}
+.nav_head li.active a:link,
+.nav_head li.active a:visited,
+.nav_head li.active a:focus {
+  color: #060519;
 }
 .nav_head li a {
   display: flex;
@@ -43,12 +49,10 @@
 }
 .nav_head li a h3 {
   margin-left: 10px;
-  font-weight: 200;
   font-size: 18px;
 }
 .nav_head li a i {
   font-size: 18px;
-  font-weight: 200;
 }
 @media (max-width: 768px) and (min-width: 577px),
   (max-width: 992px) and (min-width: 769px),

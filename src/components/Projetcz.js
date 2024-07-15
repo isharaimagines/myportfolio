@@ -9,26 +9,13 @@ import projImg5 from "../assets/img/whatsai_load.png";
 export const Projetcz = () => {
   const projetcClasses = [
     {
-      imgClass: projImg3,
-      title: "THE RESTAURANT MENU",
+      title: "WhatsAI",
       description:
-        "Develop a website for Restaurants, find out the Restaurant menu & services easily",
-      imgClasses: [
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg",
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
-      ],
-      siteLink: "https://img-restmenu.pages.dev/",
+        "This project involves the development of a chatbot web application designed to enable users to interact with an AI model.",
+      imgClass: projImg5,
+      siteLink: "https://whatsai.netlify.app/",
       reportLink:
-        "https://drive.google.com/file/d/1cgIuptM_xOjUVgew0VQcvmR3TrgNyHDJ/view?usp=drive_link",
-    },
-    {
-      imgClass: projImg1,
-      title: "WITH me PEACE",
-      description:
-        "Build a web application for Talk therapy, Mindfulness and meditation, Symptom tracking, Cognitive-behavioral therapy (CBT), Self-help resources",
+        "https://drive.google.com/file/d/1bmYhu7vgWkTDd1ho_Zbv41_RJulhWfje/view?usp=drive_link",
       imgClasses: [
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
@@ -38,10 +25,27 @@ export const Projetcz = () => {
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/googlecloud-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tensorflow-colored.svg",
       ],
-      siteLink: "https://withmepeace.netlify.app/",
+    },
+    {
+      title: "ASCII IMG",
+      description:
+        "Buid a web application for ascii code base image generator using images.",
+      imgClass: projImg4,
+      siteLink: "https://asciiimage.netlify.app/",
       reportLink:
-        "https://drive.google.com/file/d/16fU1VOUs_2J6k68vYibdwtkEMqEJgnKt/view?usp=drive_link",
+        "https://drive.google.com/file/d/1MEh1a96hJ80GreJn2KJgIbtHA_HezePS/view?usp=drive_link",
+      imgClasses: [
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
+      ],
     },
     {
       imgClass: projImg2,
@@ -63,31 +67,10 @@ export const Projetcz = () => {
         "https://drive.google.com/file/d/1FtfwvIz5mFQkTHZTNN9ODQZv0fSQgoCx/view?usp=drive_link",
     },
     {
-      title: "ASCII IMG",
+      imgClass: projImg1,
+      title: "WITH me PEACE",
       description:
-        "Buid a web application for ascii code base image generator using images.",
-      imgClass: projImg4,
-      siteLink: "https://asciiimage.netlify.app/",
-      reportLink:
-        "https://drive.google.com/file/d/1MEh1a96hJ80GreJn2KJgIbtHA_HezePS/view?usp=drive_link",
-      imgClasses: [
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg",
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg",
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
-      ],
-    },
-    {
-      title: "WhatsAI",
-      description:
-        "This project involves the development of a chatbot web application designed to enable users to interact with an AI model.",
-      imgClass: projImg5,
-      siteLink: "https://whatsai.netlify.app/",
-      reportLink:
-        "https://drive.google.com/file/d/1bmYhu7vgWkTDd1ho_Zbv41_RJulhWfje/view?usp=drive_link",
+        "Build a web application for Talk therapy, Mindfulness and meditation, Symptom tracking, Cognitive-behavioral therapy (CBT), Self-help resources",
       imgClasses: [
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
@@ -97,11 +80,27 @@ export const Projetcz = () => {
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/googlecloud-colored.svg",
-        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tensorflow-colored.svg",
       ],
+      siteLink: "https://withmepeace.netlify.app/",
+      reportLink:
+        "https://drive.google.com/file/d/16fU1VOUs_2J6k68vYibdwtkEMqEJgnKt/view?usp=drive_link",
     },
-    // Add more project objects here
+    {
+      imgClass: projImg3,
+      title: "THE RESTAURANT MENU",
+      description:
+        "Develop a website for Restaurants, find out the Restaurant menu & services easily",
+      imgClasses: [
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
+      ],
+      siteLink: "https://img-restmenu.pages.dev/",
+      reportLink:
+        "https://drive.google.com/file/d/1cgIuptM_xOjUVgew0VQcvmR3TrgNyHDJ/view?usp=drive_link",
+    },
   ];
 
   return (
@@ -132,7 +131,7 @@ export const Projetcz = () => {
                         assesses product functionality, reliability, usability,
                         and compatibility.
                         <a href={project.siteLink} className="weblink">
-                          you can try beta vesion of the project visit&nbsp;
+                          you can try beta version of this project visit&nbsp;
                           <i class="ri-external-link-line"></i>
                         </a>
                         The user's attention on advantages that project can

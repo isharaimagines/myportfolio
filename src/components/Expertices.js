@@ -1,5 +1,6 @@
 import "../assets/testcss.css";
 import React from "react";
+import ailogo from "../assets/img/ailogopreview.png";
 
 export const Expertices = () => {
   return (
@@ -10,7 +11,13 @@ export const Expertices = () => {
             <h1>EXPERTICES</h1>
           </div>
           <div className="right_line_2">
-            <div className="line_2_left">
+            <div
+              className="line_2_left"
+              style={{
+                "--hover-card-color":
+                  "linear-gradient(90deg, #c08dec, #9e73d2, #6b4b9f)",
+              }}
+            >
               <div
                 className="icons"
                 style={{
@@ -30,7 +37,13 @@ export const Expertices = () => {
                 </p>
               </div>
             </div>
-            <div className="line_2_left">
+            <div
+              className="line_2_left"
+              style={{
+                "--hover-card-color":
+                  "linear-gradient(90deg, #6b4b9f, #00d8ff)",
+              }}
+            >
               <div
                 className="icons"
                 style={{
@@ -50,7 +63,13 @@ export const Expertices = () => {
                 </p>
               </div>
             </div>
-            <div className="line_2_left">
+            <div
+              className="line_2_left"
+              style={{
+                "--hover-card-color":
+                  "linear-gradient(90deg, #3fb6d3, #19599a)",
+              }}
+            >
               <div
                 className="icons"
                 style={{
@@ -73,7 +92,13 @@ export const Expertices = () => {
           </div>
 
           <div className="right_line_2">
-            <div className="line_2_left">
+            <div
+              className="line_2_left"
+              style={{
+                "--hover-card-color":
+                  "linear-gradient(90deg, #3996d1, #2288ca, #0676b8)",
+              }}
+            >
               <div
                 className="icons"
                 style={{
@@ -93,11 +118,17 @@ export const Expertices = () => {
                 </p>
               </div>
             </div>
-            <div className="line_2_left">
+            <div
+              className="line_2_left"
+              style={{
+                "--hover-card-color":
+                  "linear-gradient(90deg, #d9248b, #aa1fba, #3616db)",
+              }}
+            >
               <div
                 className="icons"
                 style={{
-                  "--background-image": `url(https://cdn.simpleicons.org/opencv/5C3EE8)`,
+                  "--background-image": `url(${ailogo})`,
                 }}
               >
                 AI Model Development

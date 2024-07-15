@@ -3,14 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Victor+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --gradient-color: linear-gradient(
     90deg,
     hsl(48, 100%, 50%) 0%,
@@ -20,13 +19,27 @@
   --black-color: hsl(225, 15%, 6%);
   --reflection-color: hsla(48, 30%, 95%, 0.3);
   --body-color: hsl(48, 100%, 98%);
+  --body-color-right-bottom: linear-gradient(
+    135deg,
+    rgb(0, 3, 25, 0.1),
+    rgba(129, 59, 151, 0.1),
+    rgba(129, 59, 151, 0.1),
+    rgba(70, 60, 150, 0.4),
+    rgb(105, 86, 146, 0.5)
+  );
+  --body-color-right-top: linear-gradient(
+    45deg,
+    rgb(0, 3, 25, 0.1),
+    rgba(129, 59, 151, 0.1),
+    rgba(129, 59, 151, 0.1),
+    rgba(70, 60, 150, 0.4),
+    rgb(105, 86, 146, 0.5)
+  );
   --card-backgorund: linear-gradient(
     135deg,
     rgb(21, 34, 56, 0.1),
     rgb(16, 25, 35, 0.2)
   );
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat", sans-serif;
   --normal-font-size: 1rem;
   --scale-anim: scale(0.9);
@@ -35,23 +48,8 @@
 
 @font-face {
   font-family: Centra;
-  src: url("./font/CentraNo2-Bold.ttf");
-  font-weight: 700;
-}
-@font-face {
-  font-family: Centra;
   src: url("./font/CentraNo2-Medium.ttf");
   font-weight: 500;
-}
-@font-face {
-  font-family: Centra;
-  src: url("./font/CentraNo2-Book.ttf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: neon;
-  src: url("./font/neon.ttf");
-  font-weight: 400;
 }
 
 html {
@@ -114,19 +112,7 @@ img {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  /* background: linear-gradient(#152238, #101923); */
-  background: linear-gradient(
-    135deg,
-    rgb(15, 12, 21, 0.1),
-    rgba(129, 59, 151, 0.1),
-    rgba(129, 59, 151, 0.1),
-    rgba(70, 60, 150, 0.4),
-    rgb(105, 86, 146, 0.5)
-  );
-  /* background-image: url(../assets/img/com-3000-uEDNYVULR2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
+  background: var(--body-color-right-bottom);
   top: 0;
 }
 .home .home_left {
@@ -135,11 +121,44 @@ img {
   height: 600px;
   margin: 0 20px 0 0;
   transition: all 0.5s ease-in-out;
+  font-family: "Victor Mono", monospace;
 }
 .home .home_left:hover {
   transform: var(--scale-anim);
 }
 
+.dot {
+  width: 20px;
+  aspect-ratio: 1;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 100px;
+  z-index: 2;
+  right: 10%;
+  top: 10%;
+  animation: moveDot 6s linear infinite;
+}
+
+@keyframes moveDot {
+  0%,
+  100% {
+    top: 0%;
+    right: 0%;
+  }
+  25% {
+    top: 0%;
+    right: calc(100% - 0px);
+  }
+  50% {
+    top: calc(100% - 0px);
+    right: calc(100% - 0px);
+  }
+  75% {
+    top: calc(100% - 30px);
+    right: 0%;
+  }
+}
 .home .home_left .left_about {
   position: relative;
   display: flex;
@@ -187,7 +206,6 @@ img {
   text-align: left;
   font-size: 30px;
   width: 100%;
-  font-family: "Fascinate", system-ui;
   font-weight: 400;
   font-style: normal;
 }
@@ -212,6 +230,7 @@ img {
   position: relative;
   width: 50%;
   height: 600px;
+  font-family: "Victor Mono", monospace;
 }
 .home .home_right .right_line_1 {
   width: 100%;
@@ -450,21 +469,11 @@ img {
   font-size: 60px;
   z-index: 100;
 }
-/* .home .home_right .right_line_2 .line_2_right .line_1 h1 {
-  animation: flux 2s linear infinite;
-  -moz-animation: flux 2s linear infinite;
-  -webkit-animation: flux 2s linear infinite;
-  -o-animation: flux 2s linear infinite;
-} */
 
 .home .home_right .right_line_2 .line_2_right p {
   font-size: 25px;
   z-index: 100;
 }
-/* .home .home_right .right_line_2 .line_2_right .line_1 p {
-
-} */
-
 .home .home_right .right_line_3 {
   width: 100%;
   height: 20%;
@@ -915,18 +924,7 @@ img {
   justify-content: center;
   width: 100%;
   height: 150vh;
-  background: linear-gradient(
-    45deg,
-    rgb(15, 12, 21, 0.1),
-    rgba(129, 59, 151, 0.1),
-    rgba(129, 59, 151, 0.1),
-    rgba(70, 60, 150, 0.4),
-    rgb(105, 86, 146, 0.5)
-  );
-  /* background-image: url(../assets/img/com-3000-uEDNYVULR2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
+  background: var(--body-color-right-top);
   top: 0;
 }
 .expert .expert_right {
@@ -941,10 +939,6 @@ img {
 }
 .expert .expert_right .right_line_1 h1 {
   font-size: 120px;
-  /* font-family: "PT Sans", sans-serif;*/
-  /* font-family: "Frijole", system-ui; */
-  /* font-family: "Fascinate", system-ui; */
-  /* font-family: "Kumar One Outline", system-ui; */
   font-family: "Fascinate Inline", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -965,6 +959,7 @@ img {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  font-family: "Victor Mono", monospace;
 }
 .expert .expert_right .right_line_2 .line_2_left {
   width: 33%;
@@ -972,10 +967,48 @@ img {
   height: 100%;
   margin: 20px 0 20px 20px;
   padding: 10px;
-  background: #222831;
-  /* -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px); */
   border-radius: 20px;
+
+  transition: 1s all;
+  overflow: hidden;
+
+  box-shadow: 0 4px 30px rgb(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  background: rgba(52, 39, 96, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.expert .expert_right .right_line_2 .line_2_left::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  right: -30%;
+  width: 120px;
+  height: 120px;
+  background: var(--hover-card-color);
+  filter: blur(70px);
+  border-radius: 50%;
+  transition: width 1s, height 1s;
+}
+.expert .expert_right .right_line_2 .line_2_left::before {
+  content: "";
+  position: absolute;
+  bottom: -160%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background: var(--hover-card-color);
+  filter: blur(70px);
+  border-radius: 50%;
+  transition: width 1s, height 1s;
+}
+.expert .expert_right .right_line_2 .line_2_left:hover::before {
+  bottom: -230%;
+  width: 1000px;
+  height: 1000px;
+  filter: blur(1px);
 }
 
 .expert .expert_right .right_line_2 .line_2_left .icons {
@@ -1019,22 +1052,23 @@ img {
   width: 2.5px;
   height: 45%;
   top: 60px;
-  background: #909090;
+  background: azure;
 }
+
 .expert .expert_right .right_line_2 .line_2_left .title .htag h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   font-weight: 250;
-  color: #909090;
+  color: azure;
 }
 .expert .expert_right .right_line_2 .line_2_left .title p {
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 20px 0 20px 0;
-  font-size: 18px;
+  padding: 30px 0 30px 0;
+  font-size: 16px;
   text-align: justify;
 }
 
@@ -1089,10 +1123,6 @@ img {
     rgb(251, 251, 255) 0%,
     rgb(215, 223, 252) 100%
   );
-  /* background-image: url(../assets/img/com-3000-uEDNYVULR2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   top: 0;
 }
 .project .project_right {
@@ -1108,10 +1138,6 @@ img {
 }
 .project .project_right .right_line_1 h1 {
   font-size: 120px;
-  /* font-family: "PT Sans", sans-serif;*/
-  /* font-family: "Frijole", system-ui; */
-  /* font-family: "Fascinate", system-ui; */
-  /* font-family: "Kumar One Outline", system-ui; */
   font-family: "Fascinate Inline", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -1132,6 +1158,8 @@ img {
   align-items: center;
   justify-content: center;
   margin: 0;
+  border-bottom: 3px dashed #121212;
+  font-family: "Victor Mono", monospace;
 }
 .project .project_right .right_line_2 .line_2_left {
   width: 100%;
@@ -1217,6 +1245,7 @@ img {
   display: flex;
   align-items: center;
   color: #082180;
+  font-weight: 700;
 }
 .project
   .project_right
@@ -1304,14 +1333,7 @@ img {
   justify-content: center;
   width: 100%;
   height: auto;
-  background: linear-gradient(
-    135deg,
-    rgb(15, 12, 21, 0.1),
-    rgba(129, 59, 151, 0.1),
-    rgba(129, 59, 151, 0.1),
-    rgba(70, 60, 150, 0.4),
-    rgb(105, 86, 146, 0.5)
-  );
+  background: var(--body-color-right-top);
 }
 .footer .f_container {
   position: relative;
@@ -1322,6 +1344,7 @@ img {
   width: 100%;
   height: auto;
   padding: 25px;
+  font-family: "Victor Mono", monospace;
 }
 .footer .f_container .social {
   position: relative;
