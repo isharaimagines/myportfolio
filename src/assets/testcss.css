@@ -849,7 +849,7 @@ img {
   .home .home_right .right_line_2 .line_2_left {
     width: 98%;
     position: relative;
-    height: 400px;
+    height: max-content;
   }
   .home .home_right .right_line_3 {
     flex-direction: column;
