@@ -174,7 +174,10 @@ export const Home = () => {
             </div>
             <div className="line_3_right">
               <div className="r1">
-                <a href="https://example.com" class="button">
+                <a
+                  href="https://drive.google.com/file/d/1R2tYJk6ANfZ3c6oDAbhVeY2DxBkLggXR/view?usp=sharing"
+                  class="button"
+                >
                   <div class="button__content">
                     <span class="button__text">
                       <h1>
@@ -224,7 +227,7 @@ export const Home = () => {
                 </a>
               </div>
               <div className="r2">
-                <a href="/" class="button">
+                <a href="https://bit.ly/isharaget9/" class="button">
                   <div class="button__content">
                     <span class="button__text">
                       <h1>2+</h1>
