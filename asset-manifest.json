@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myportfolio/static/css/main.efe03846.css",
-    "main.js": "/myportfolio/static/js/main.56a16a2f.js",
+    "main.css": "/myportfolio/static/css/main.0e281fac.css",
+    "main.js": "/myportfolio/static/js/main.3a06a12b.js",
     "static/js/787.3503cf78.chunk.js": "/myportfolio/static/js/787.3503cf78.chunk.js",
     "static/media/restmenu.png": "/myportfolio/static/media/restmenu.162441c3b5a7bd06990c.png",
     "static/media/auto_x2_light_ai.png": "/myportfolio/static/media/auto_x2_light_ai.fcdf6c2261932dcf1cf8.png",
@@ -15,17 +15,15 @@
     "static/media/my_logo.png": "/myportfolio/static/media/my_logo.d118d2477c2ca5d1e38a.png",
     "static/media/AdobeStock-nAYhaikmKp.jpg": "/myportfolio/static/media/AdobeStock-nAYhaikmKp.3b5939578386a9663924.jpg",
     "static/media/AdobeStock-u4UFyTJEbR.jpg": "/myportfolio/static/media/AdobeStock-u4UFyTJEbR.69e20b322a21bf9c9c8a.jpg",
-    "static/media/CentraNo2-Bold.ttf": "/myportfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/myportfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
-    "static/media/CentraNo2-Book.ttf": "/myportfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
-    "static/media/neon.ttf": "/myportfolio/static/media/neon.3cdac08338e1a7f8da41.ttf",
+    "static/media/ailogopreview.png": "/myportfolio/static/media/ailogopreview.8c3b8c3b4c4cf8e2ef55.png",
     "index.html": "/myportfolio/index.html",
-    "main.efe03846.css.map": "/myportfolio/static/css/main.efe03846.css.map",
-    "main.56a16a2f.js.map": "/myportfolio/static/js/main.56a16a2f.js.map",
+    "main.0e281fac.css.map": "/myportfolio/static/css/main.0e281fac.css.map",
+    "main.3a06a12b.js.map": "/myportfolio/static/js/main.3a06a12b.js.map",
     "787.3503cf78.chunk.js.map": "/myportfolio/static/js/787.3503cf78.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efe03846.css",
-    "static/js/main.56a16a2f.js"
+    "static/css/main.0e281fac.css",
+    "static/js/main.3a06a12b.js"
   ]
 }
