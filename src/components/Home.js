@@ -227,7 +227,7 @@ export const Home = () => {
                 </a>
               </div>
               <div className="r2">
-                <a href="https://bit.ly/isharaget9/" class="button">
+                <a href="https://bit.ly/isharaget9" class="button">
                   <div class="button__content">
                     <span class="button__text">
                       <h1>2+</h1>
