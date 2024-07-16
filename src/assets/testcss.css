@@ -42,7 +42,7 @@
   );
   --body-font: "Montserrat", sans-serif;
   --normal-font-size: 1rem;
-  --scale-anim: scale(0.9);
+  --scale-anim: scale(0.95);
 }
 /*---------*/
 
@@ -120,7 +120,6 @@ img {
   width: 30%;
   height: 600px;
   margin: 0 20px 0 0;
-  transition: all 0.5s ease-in-out;
   font-family: "Victor Mono", monospace;
 }
 .home .home_left:hover {
@@ -712,7 +711,13 @@ img {
 /* View geometric shapes */
 .button:hover {
   transform: rotate(-4deg) scale(1.1);
-  z-index: 100;
+  z-index: 99999;
+}
+.r1:hover {
+  z-index: 99999;
+}
+.r2:hover {
+  z-index: 99999;
 }
 .home .home_right .right_line_3 .line_3_right .r1 .button:hover {
   transform: rotate(4deg) scale(1.1);

@@ -1,18 +1,31 @@
 import "../assets/testcss.css";
 import React from "react";
 import ailogo from "../assets/img/ailogopreview.png";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const Expertices = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000, disable: "mobile" });
+  }, []);
+
   return (
     <>
       <div className="expert" id="expert">
         <div className="expert_right">
-          <div className="right_line_1">
+          <div
+            className="right_line_1"
+            data-aos="slide-up"
+            data-aos-delay="300"
+          >
             <h1>EXPERTICES</h1>
           </div>
           <div className="right_line_2">
             <div
               className="line_2_left"
+              data-aos="slide-up"
+              data-aos-delay="300"
               style={{
                 "--hover-card-color":
                   "linear-gradient(90deg, #c08dec, #9e73d2, #6b4b9f)",
@@ -39,6 +52,8 @@ export const Expertices = () => {
             </div>
             <div
               className="line_2_left"
+              data-aos="slide-up"
+              data-aos-delay="600"
               style={{
                 "--hover-card-color":
                   "linear-gradient(90deg, #6b4b9f, #00d8ff)",
@@ -65,6 +80,8 @@ export const Expertices = () => {
             </div>
             <div
               className="line_2_left"
+              data-aos="slide-up"
+              data-aos-delay="900"
               style={{
                 "--hover-card-color":
                   "linear-gradient(90deg, #3fb6d3, #19599a)",
@@ -94,6 +111,8 @@ export const Expertices = () => {
           <div className="right_line_2">
             <div
               className="line_2_left"
+              data-aos="slide-up"
+              data-aos-delay="200"
               style={{
                 "--hover-card-color":
                   "linear-gradient(90deg, #3996d1, #2288ca, #0676b8)",
@@ -120,6 +139,8 @@ export const Expertices = () => {
             </div>
             <div
               className="line_2_left"
+              data-aos="slide-up"
+              data-aos-delay="300"
               style={{
                 "--hover-card-color":
                   "linear-gradient(90deg, #d9248b, #aa1fba, #3616db)",

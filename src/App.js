@@ -4,8 +4,13 @@ import { Footer } from "./components/Footer";
 import { Home } from "./components/Home";
 import { Expertices } from "./components/Expertices";
 import { Projetcz } from "./components/Projetcz";
+import BackgroundSound from "./components/BackgroundSound";
+import React, { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="App">
       <NavBar />

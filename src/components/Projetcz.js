@@ -1,10 +1,12 @@
 import "../assets/testcss.css";
-import React from "react";
+import React, { useEffect } from "react";
 import projImg1 from "../assets/img/pwithc_1.png";
 import projImg2 from "../assets/img/swoodwork.png";
 import projImg3 from "../assets/img/restmenu.png";
 import projImg4 from "../assets/img/asciiART.png";
 import projImg5 from "../assets/img/whatsai_load.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const Projetcz = () => {
   const projetcClasses = [
@@ -103,28 +105,60 @@ export const Projetcz = () => {
     },
   ];
 
+  useEffect(() => {
+    Aos.init({ duration: 2000, disable: "mobile" });
+  }, []);
+
   return (
     <>
       <div className="project" id="projects">
         <div className="project_right">
-          <div className="right_line_1">
+          <div
+            className="right_line_1"
+            data-aos="slide-up"
+            data-aos-delay="300"
+          >
             <h1>PROJECTS</h1>
           </div>
           {projetcClasses.map((project, index) => (
             <div key={index} className="right_line_2">
-              <div className="line_2_left">
-                <div className="images">
+              <div
+                className="line_2_left"
+                data-aos="slide-up"
+                data-aos-delay="300"
+              >
+                <div
+                  className="images"
+                  data-aos="slide-up"
+                  data-aos-delay="300"
+                >
                   <img src={project.imgClass} alt="alt" />
                 </div>
                 <div className="feath">
-                  <h1 className="title">{project.title}</h1>
-                  <h3 className="des">{project.description}</h3>
-                  <div className="Icons">
+                  <h1
+                    className="title"
+                    data-aos="slide-up"
+                    data-aos-delay="300"
+                  >
+                    {project.title}
+                  </h1>
+                  <h3 className="des" data-aos="slide-up" data-aos-delay="300">
+                    {project.description}
+                  </h3>
+                  <div
+                    className="Icons"
+                    data-aos="slide-up"
+                    data-aos-delay="400"
+                  >
                     {project.imgClasses.map((imgClass, index) => (
                       <img key={index} src={imgClass} alt="view" />
                     ))}
                   </div>
-                  <div className="btns">
+                  <div
+                    className="btns"
+                    data-aos="slide-up"
+                    data-aos-delay="300"
+                  >
                     <div className="site_btn">
                       <p>
                         Here the end user validates the final product. It

@@ -2,11 +2,13 @@ import profile from "../assets/img/auto_x2_light_ai.png";
 import logo from "../assets/img/my_logo.png";
 import "../assets/testcss.css";
 import React, { useState, useEffect } from "react";
+import Aos from "aos";
 import a1 from "../assets/img/com-3000-uEDNYVULR2.jpg";
 import a3 from "../assets/img/AdobeStock-u4UFyTJEbR.jpg";
 import a4 from "../assets/img/AdobeStock-CnAomlY3jP.jpg";
 import a5 from "../assets/img/AdobeStock-nAYhaikmKp.jpg";
 import a6 from "../assets/img/AdobeStock-saWjVfmogI.jpg";
+import "aos/dist/aos.css";
 
 const images = [
   {
@@ -38,7 +40,7 @@ const images = [
 
 export const Home = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const [slide, setSlide] = useState(false);
+  const [slide, setSlide] = useState(true);
   const [isSliding, setIsSliding] = useState(true);
 
   useEffect(() => {
@@ -60,10 +62,14 @@ export const Home = () => {
     setIsSliding((prev) => !prev);
   };
 
+  useEffect(() => {
+    Aos.init({ duration: 50000 });
+  }, []);
+
   return (
     <>
       <div className="home" id="home">
-        <div className="home_left">
+        <div className="home_left" data-aos="flip-left">
           <div className="left_about">
             <div className="a1">
               <h1>
@@ -81,7 +87,7 @@ export const Home = () => {
         </div>
         <div className="home_right">
           <div className="right_line_1">
-            <div className="line_1 _1">
+            <div className="line_1 _1" data-aos="flip-up" data-aos-delay="100">
               <a href="https://github.com/ishararaviget9/">
                 <img
                   src="https://skillicons.dev/icons?i=github"
@@ -89,7 +95,7 @@ export const Home = () => {
                 />
               </a>
             </div>
-            <div className="line_1 _2">
+            <div className="line_1 _2" data-aos="flip-up" data-aos-delay="200">
               <a href="https://www.linkedin.com/in/ishararaviget9/">
                 <img
                   src="https://skillicons.dev/icons?i=linkedin"
@@ -97,7 +103,7 @@ export const Home = () => {
                 />
               </a>
             </div>
-            <div className="line_1 _3">
+            <div className="line_1 _3" data-aos="flip-up" data-aos-delay="300">
               <a href="https://discord.gg/ZBPR3EP3B6">
                 <img
                   src="https://skillicons.dev/icons?i=discord"
@@ -105,7 +111,7 @@ export const Home = () => {
                 />
               </a>
             </div>
-            <div className="line_1 _4">
+            <div className="line_1 _4" data-aos="flip-up" data-aos-delay="400">
               <a href="https://t.me/DroidImaginalytic">
                 <img
                   src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/telegram/default.svg"
@@ -113,7 +119,7 @@ export const Home = () => {
                 />
               </a>
             </div>
-            <div className="line_1 _5">
+            <div className="line_1 _5" data-aos="flip-up" data-aos-delay="500">
               <a href="https://instagram.com/ishararaviget9">
                 <img
                   src="https://skillicons.dev/icons?i=instagram"
@@ -121,7 +127,7 @@ export const Home = () => {
                 />
               </a>
             </div>
-            <div className="line_1 _6">
+            <div className="line_1 _6" data-aos="flip-up" data-aos-delay="600">
               <a href="mailto:studymotivat01@gmail.com">
                 <img
                   src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg"
@@ -144,6 +150,7 @@ export const Home = () => {
               <div
                 className="carousel-inner"
                 style={{ transform: `translateX(-${currentImage * 100}%)` }}
+                data-aos="fade"
               >
                 {images.map((item, index) => (
                   <div className="carousel-item" key={index}>
@@ -156,7 +163,7 @@ export const Home = () => {
                 ))}
               </div>
             </div>
-            <div className="line_2_right">
+            <div className="line_2_right" data-aos="flip-right">
               <div className="line_1">
                 <h1>6</h1>
                 <p>Projects</p>
@@ -169,109 +176,109 @@ export const Home = () => {
             </div>
           </div>
           <div className="right_line_3">
-            <div className="line_3_left">
+            <div className="line_3_left" data-aos="flip-down">
               <img src={logo} alt="logname" />
             </div>
             <div className="line_3_right">
-              <div className="r1">
+              <div className="r1" data-aos="flip-right">
                 <a
                   href="https://drive.google.com/file/d/1R2tYJk6ANfZ3c6oDAbhVeY2DxBkLggXR/view?usp=sharing"
-                  class="button"
+                  className="button"
                 >
-                  <div class="button__content">
-                    <span class="button__text">
+                  <div className="button__content">
+                    <span className="button__text">
                       <h1>
-                        <i class="ri-download-cloud-2-fill"></i>
+                        <i className="ri-download-cloud-2-fill"></i>
                       </h1>
                       <p>
                         Download <br></br>CV
                       </p>
                     </span>
 
-                    <div class="button__reflection-1"></div>
-                    <div class="button__reflection-2"></div>
+                    <div className="button__reflection-1"></div>
+                    <div className="button__reflection-2"></div>
                   </div>
 
                   <img
                     src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/69-GoogleDrive_google_drive-512.png"
                     alt=""
-                    class="button__star-1"
+                    className="button__star-1"
                   />
                   <img
                     src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/69-GoogleDrive_google_drive-512.png"
                     alt=""
-                    class="button__star-2"
+                    className="button__star-2"
                   />
                   <img
                     src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/69-GoogleDrive_google_drive-512.png"
                     alt=""
-                    class="button__circle-1"
+                    className="button__circle-1"
                   />
                   <img
                     src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/107-chrome-512.png"
                     alt=""
-                    class="button__circle-2"
+                    className="button__circle-2"
                   />
                   <img
                     src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/107-chrome-512.png"
                     alt=""
-                    class="button__diamond"
+                    className="button__diamond"
                   />
                   <img
                     src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/107-chrome-512.png"
                     alt=""
-                    class="button__triangle"
+                    className="button__triangle"
                   />
 
-                  <div class="button__shadow"></div>
+                  <div className="button__shadow"></div>
                 </a>
               </div>
-              <div className="r2">
+              <div className="r2" data-aos="flip-left">
                 <a href="https://bit.ly/isharaget9" class="button">
-                  <div class="button__content">
-                    <span class="button__text">
+                  <div className="button__content">
+                    <span className="button__text">
                       <h1>2+</h1>
                       <p>
                         Years of <br></br>Experience
                       </p>
                     </span>
 
-                    <div class="button__reflection-1"></div>
-                    <div class="button__reflection-2"></div>
+                    <div className="button__reflection-1"></div>
+                    <div className="button__reflection-2"></div>
                   </div>
 
                   <img
                     src="https://skillicons.dev/icons?i=firebase"
                     alt=""
-                    class="button__star-1"
+                    className="button__star-1"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=cpp"
                     alt=""
-                    class="button__star-2"
+                    className="button__star-2"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=cs"
                     alt=""
-                    class="button__circle-1"
+                    className="button__circle-1"
                   />
                   <img
                     src="https://cdn.simpleicons.org/npm/CB3837"
                     alt=""
-                    class="button__circle-2"
+                    className="button__circle-2"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=js"
                     alt=""
-                    class="button__diamond"
+                    className="button__diamond"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=nodejs"
                     alt=""
-                    class="button__triangle"
+                    className="button__triangle"
                   />
 
-                  <div class="button__shadow"></div>
+                  <div className="button__shadow"></div>
                 </a>
               </div>
             </div>
