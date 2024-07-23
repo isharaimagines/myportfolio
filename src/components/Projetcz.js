@@ -64,7 +64,7 @@ export const Projetcz = () => {
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg",
         "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
       ],
-      siteLink: "https://woodwork9.netlify.app/",
+      siteLink: "https://siriwardhana.netlify.app/",
       reportLink:
         "https://drive.google.com/file/d/1FtfwvIz5mFQkTHZTNN9ODQZv0fSQgoCx/view?usp=drive_link",
     },

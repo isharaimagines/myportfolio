@@ -112,7 +112,7 @@ export const Home = () => {
               </a>
             </div>
             <div className="line_1 _4" data-aos="flip-up" data-aos-delay="400">
-              <a href="https://t.me/DroidImaginalytic">
+              <a href="https://t.me/ishararaviget09">
                 <img
                   src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/telegram/default.svg"
                   alt="iconname"
@@ -182,7 +182,7 @@ export const Home = () => {
             <div className="line_3_right">
               <div className="r1" data-aos="flip-right">
                 <a
-                  href="https://drive.google.com/file/d/1R2tYJk6ANfZ3c6oDAbhVeY2DxBkLggXR/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1cQOwNgJx_NLWEi8VKsKzzR99v15A-scF/view?usp=sharing"
                   className="button"
                 >
                   <div className="button__content">

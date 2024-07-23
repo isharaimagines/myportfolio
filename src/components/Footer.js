@@ -18,22 +18,22 @@ export const Footer = () => {
             <i class="ri-discord-fill"></i>
           </a>
 
-          <a href="https://t.me/DroidImaginalytic">
+          <a href="https://t.me/ishararaviget09">
             <i class="ri-telegram-fill"></i>
           </a>
           <a href="https://instagram.com/ishararaviget9">
             <i class="ri-instagram-line"></i>
           </a>
-          <a href="https://ishararaviget9.github.io/myprofile/">
+          <a href="https://www.youtube.com/@ishararaviget9">
             <i class="ri-youtube-fill"></i>
           </a>
-          <a>
+          <a href="https://wa.me/message/B6VWOLULZIJEP0">
             <i class="ri-whatsapp-line"></i>
           </a>
         </div>
         <div className="label">
           <i class="ri-copyright-line"></i>
-          {"  "} ishararaviget9. All Rights Reserved
+          ishararaviget9. All Rights Reserved
         </div>
         <div className="tags">
           <li>API</li>
