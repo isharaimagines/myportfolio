@@ -88,7 +88,7 @@ export const Home = () => {
         <div className="home_right">
           <div className="right_line_1">
             <div className="line_1 _1" data-aos="flip-up" data-aos-delay="100">
-              <a href="https://github.com/ishararaviget9/">
+              <a href="https://github.com/isharaplusplus/">
                 <img
                   src="https://skillicons.dev/icons?i=github"
                   alt="iconname"
@@ -96,7 +96,7 @@ export const Home = () => {
               </a>
             </div>
             <div className="line_1 _2" data-aos="flip-up" data-aos-delay="200">
-              <a href="https://www.linkedin.com/in/ishararaviget9/">
+              <a href="https://www.linkedin.com/in/isharaplusplus/">
                 <img
                   src="https://skillicons.dev/icons?i=linkedin"
                   alt="icon name"
@@ -120,7 +120,7 @@ export const Home = () => {
               </a>
             </div>
             <div className="line_1 _5" data-aos="flip-up" data-aos-delay="500">
-              <a href="https://instagram.com/ishararaviget9">
+              <a href="https://instagram.com/isharaplusplus">
                 <img
                   src="https://skillicons.dev/icons?i=instagram"
                   alt="iconname"
