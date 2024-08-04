@@ -1,10 +1,10 @@
 // BackgroundSound.js
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import track from "../assets/audio/TranquilityDeepHealing_1.mp3";
 
 const BackgroundSound = () => {
-  const [audioContext, setAudioContext] = useState(null);
-  const [audioElement, setAudioElement] = useState(null);
+  const [, setAudioContext] = useState(null);
+  const [, setAudioElement] = useState(null);
 
   useEffect(() => {
     const context = new (window.AudioContext || window.webkitAudioContext)();

@@ -112,7 +112,7 @@ export const Home = () => {
               </a>
             </div>
             <div className="line_1 _4" data-aos="flip-up" data-aos-delay="400">
-              <a href="https://t.me/ishararaviget09">
+              <a href="https://t.me/isharaplusplus">
                 <img
                   src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/telegram/default.svg"
                   alt="iconname"
@@ -169,7 +169,7 @@ export const Home = () => {
                 <p>Projects</p>
               </div>
               <div className="line_2">
-                <h1>2+</h1>
+                <h1>3+</h1>
                 <p>Awards</p>
                 <div className="wave"></div>
               </div>

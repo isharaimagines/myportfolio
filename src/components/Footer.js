@@ -18,7 +18,7 @@ export const Footer = () => {
             <i class="ri-discord-fill"></i>
           </a>
 
-          <a href="https://t.me/ishararaviget09">
+          <a href="https://t.me/isharaplusplus">
             <i class="ri-telegram-fill"></i>
           </a>
           <a href="https://instagram.com/isharaplusplus">
