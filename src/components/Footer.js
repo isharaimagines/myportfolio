@@ -5,10 +5,10 @@ export const Footer = () => {
     <div className="footer" id="connect">
       <div className="f_container">
         <div className="social">
-          <a href="https://www.linkedin.com/in/isharaplusplus/">
+          <a href="https://www.linkedin.com/in/isharaimagines/">
             <i class="ri-linkedin-box-fill"></i>
           </a>
-          <a href="https://github.com/isharaplusplus/">
+          <a href="https://github.com/isharaimagines/">
             <i class="ri-github-fill"></i>
           </a>
           <a href="mailto:studymotivat01@gmail.com">
@@ -18,13 +18,13 @@ export const Footer = () => {
             <i class="ri-discord-fill"></i>
           </a>
 
-          <a href="https://t.me/isharaplusplus">
+          <a href="https://t.me/isharaimagines">
             <i class="ri-telegram-fill"></i>
           </a>
-          <a href="https://instagram.com/isharaplusplus">
+          <a href="https://instagram.com/isharaimagines">
             <i class="ri-instagram-line"></i>
           </a>
-          <a href="https://www.youtube.com/@isharaplusplus">
+          <a href="https://www.youtube.com/@isharaimagines">
             <i class="ri-youtube-fill"></i>
           </a>
           <a href="https://wa.me/message/B6VWOLULZIJEP0">
@@ -33,7 +33,7 @@ export const Footer = () => {
         </div>
         <div className="label">
           <i class="ri-copyright-line"></i>
-          isharaplusplus. All Rights Reserved
+          isharaimagines. All Rights Reserved
         </div>
         <div className="tags">
           <li>API</li>
