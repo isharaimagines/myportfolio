@@ -1,5 +1,4 @@
 {
-  "homepage": "https://ishararaviget9.github.io/myportfolio",
   "name": "myportfolio",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +12,7 @@
     "bootstrap": "^5.3.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "firebase": "^10.12.5",
     "jquery": "^3.7.1",
     "nodemailer": "^6.9.6",
     "raphael": "^2.3.0",
@@ -30,8 +30,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

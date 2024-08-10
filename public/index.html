@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
 
@@ -26,10 +26,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://isharaplusplus.github.io/myportfolio/"
-    />
+    <meta property="og:url" content="https://isharaimagines.web.app" />
     <meta property="og:title" content="Portfolio - Ravindu Ishara" />
     <meta
       property="og:description"
@@ -39,18 +36,54 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="https://isharaplusplus.github.io/myportfolio/"
-    />
+    <meta property="twitter:url" content="https://isharaimagines.web.app" />
     <meta property="twitter:title" content="Portfolio - Ravindu Ishara" />
     <meta
       property="twitter:description"
       content="Here at My Portfolio |  Don't judge a book by its cover. Feel free to study my projects and decide yourself."
     />
     <meta property="twitter:image" content="%PUBLIC_URL%/my_logo.ico" />
-
-    <!-------------------------------------------->
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.12.5/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.12.5/firebase-auth-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/10.12.5/firebase-database-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.12.5/firebase-firestore-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.12.5/firebase-functions-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.12.5/firebase-messaging-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.12.5/firebase-storage-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.12.5/firebase-analytics-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.12.5/firebase-remote-config-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.12.5/firebase-performance-compat.js"
+    ></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
   </head>
   <body>
     <div id="root"></div>
